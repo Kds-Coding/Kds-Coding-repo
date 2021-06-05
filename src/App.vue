@@ -18,22 +18,22 @@
             id="moreOpen"
           >
             <!-- hop une petite div image-->
-            <img src="../public/home.png" alt="" />
+            <img src="../public/img/icons/home.png" alt="" />
             <p style="margin: auto">Menu</p>
           </button>
         </div>
         <div id="profil" class="container col align-self-end">
           <img
             id="profilPic"
-            src="../public/me.png"
+            src="../public/img/icons/me.png"
             alt=""
             height="88"
             width="88"
           />
           <div id="infos" class="d-flex flex-column justify-content-start">
-            <p>Max</p>
-            <p>Titre</p>
-            <p>Succes: XiX</p>
+            <p style="margin-bottom: 0px">Max</p>
+            <p style="margin-bottom: 0px">Titre</p>
+            <p style="margin-bottom: 0px">Succes: XiX</p>
           </div>
         </div>
       </nav>
@@ -62,6 +62,7 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&display=swap");
 #app {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -90,6 +91,7 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
+  background-color: #e5e5e5;
 }
 
 #content.streth {
@@ -112,13 +114,13 @@ export default {
 }
 
 #profil {
-  width: 220px;
+  width: 289px;
+  height: 103.15px;
   margin-right: 5%;
   right: 0;
   background-color: #f9f9f9;
   border-radius: 20px;
-  box-shadow: 0px 3px grey;
-  max-width: 260px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   position: fixed;
   top: 10px;
 }
@@ -126,6 +128,14 @@ export default {
   position: fixed;
   top: 0;
   width: 95%;
+  z-index: 9999;
+}
+#infos p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23.0902px;
+  line-height: 27px;
 }
 </style>
 

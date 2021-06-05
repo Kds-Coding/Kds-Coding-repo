@@ -2,7 +2,9 @@
   <nav class="navbar scroller" id="sidebar">
     <ul class="list-unstyled components">
       <div class="sidebar-header">
-        <router-link to="/"> <img src="../../../public/log.jpg" /></router-link>
+        <router-link to="/">
+          <img src="../../../public/img/icons/log.jpg"
+        /></router-link>
       </div>
       <li class="nav-item" id="Algo">
         <a
