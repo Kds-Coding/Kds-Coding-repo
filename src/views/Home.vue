@@ -42,7 +42,7 @@
               <button
                 type="button"
                 id="seeMore"
-                @click="() => $router.push('/algo')"
+                @click="$router.push('/algo'), scrollToTop()"
               >
                 See more
               </button>
@@ -57,7 +57,13 @@
             <div class="CourseBlock">
               <h1 class="text-center">DEVELOPPEMENT WEB</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <button type="button" id="seeMore">See more</button>
+              <button
+                type="button"
+                id="seeMore"
+                @click="$router.push('/web'), scrollToTop()"
+              >
+                See more
+              </button>
             </div>
           </div>
         </article>
@@ -85,6 +91,12 @@ import Discover from "../components/common/Discover.vue";
 export default {
   name: "Home",
   components: { Discover },
+
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
 };
 </script>
 <style lang="scss">
@@ -198,15 +210,16 @@ article img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-}
-#AlgoDiv #seeMore {
-  background-color: $colorAlgo;
-}
-#WebDevDiv #seeMore {
-  background-color: $colorWeb;
-}
-#ObjDevDiv #seeMore {
-  background-color: $colorObj;
+
+  #AlgoDiv #seeMore {
+    background-color: $colorAlgo;
+  }
+  #WebDevDiv #seeMore {
+    background-color: $colorWeb;
+  }
+  #ObjDevDiv #seeMore {
+    background-color: $colorObj;
+  }
 }
 
 header .container {
@@ -243,7 +256,6 @@ header .welcome {
   height: 167px;
   left: 50%;
   top: 50%;
-
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;

@@ -1,9 +1,9 @@
 <template>
-  <AlgoHeader id="AlgoHeader">
-    <h2 id="algoSubTitle">Cours et exercices</h2>
+  <WebHeader id="WebHeader">
+    <h2 id="WebSubTitle">Cours et exercices</h2>
     <Discover></Discover>
-  </AlgoHeader>
-  <div id="AlgoConteneur">
+  </WebHeader>
+  <div id="WebConteneur">
     <br />
     <div class="container CoursePage">
       <div class="col-lg-12 subTitle">
@@ -24,8 +24,8 @@
         </div>
         <div class="play">
           <Play
-            circleColor="#BB4646"
-            @click="() => $router.push('/algo/course1')"
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/course1')"
           ></Play>
         </div>
       </article>
@@ -43,8 +43,8 @@
         </div>
         <div class="play">
           <Play
-            circleColor="#BB4646"
-            @click="() => $router.push('/algo/course1')"
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/course1')"
           ></Play>
         </div>
       </article>
@@ -60,10 +60,10 @@
             eiusmod tempor incididunt ut labore.
           </p>
         </div>
-        <div class="play"><Play circleColor="#BB4646"></Play></div>
+        <div class="play"><Play circleColor="#4691BD"></Play></div>
       </article>
       <div class="container-fluid text-center" style="margin: 20px">
-        <Arrow arrowTransform="rotate(270)" target="AlgoHeader"></Arrow>
+        <Arrow arrowTransform="rotate(270)" target="WebHeader"></Arrow>
         <Arrow arrowTransform="rotate(90)" target="ExerciceConteneur"></Arrow>
       </div>
     </div>
@@ -81,7 +81,7 @@
           Niveau : Facile
           <h1>Exercice 1 :Lorem ipsum dolor sit amet</h1>
         </div>
-        <div class="play"><Play circleColor="#BB4646"></Play></div>
+        <div class="play"><Play circleColor="#4691BD"></Play></div>
       </article>
       <article class="col-lg-10 excercise">
         <div class="medal">
@@ -91,11 +91,11 @@
           Niveau : Facile
           <h1>Exercice 2 :Lorem ipsum dolor sit amet</h1>
         </div>
-        <div class="play"><Play circleColor="#BB4646"></Play></div>
+        <div class="play"><Play circleColor="#4691BD"></Play></div>
       </article>
     </div>
     <div class="container-fluid text-center" style="margin: 20px">
-      <Arrow arrowTransform="rotate(270)" target="AlgoConteneur"></Arrow>
+      <Arrow arrowTransform="rotate(270)" target="WebConteneur"></Arrow>
     </div>
   </div>
 
@@ -114,17 +114,17 @@
     </Banner>
 
     <Banner
-      rectColor="#4691BD"
-      pathColor="#1E6995"
+      rectColor="#BB4646"
+      pathColor="#A12C2b"
       height="100%"
       width="100%"
       class="col-lg-6"
     >
       <div class="centerLink">
-        <h1 class="footerLink">DEVELOPPEMENT WEB</h1>
+        <h1 class="footerLink">ALGORITHMIE</h1>
         <Arrow
           arrowTransform="rotate(0)"
-          @click="() => $router.push('/web')"
+          @click="() => $router.push('/algo')"
         ></Arrow>
       </div>
     </Banner>
@@ -132,7 +132,7 @@
 </template>
 
 <script>
-import AlgoHeader from "../components/common/AlgoHeader.vue";
+import WebHeader from "../components/common/WebHeader.vue";
 import Discover from "../components/common/Discover.vue";
 import Footer from "../components/common/Footer.vue";
 import GoldMedal from "../assets/svg/icons/medal/gold-medal";
@@ -144,7 +144,7 @@ import Play from "../assets/svg/icons/buttons/play_circle_filled.vue";
 
 export default {
   components: {
-    AlgoHeader,
+    WebHeader,
     Discover,
     GoldMedal,
     SilverMedal,
@@ -158,7 +158,7 @@ export default {
 </script>
 
 <style lang="scss">
-#AlgoConteneur article {
+#WebConteneur article {
   margin: 35px;
   display: flex;
   background: #ffffff;
@@ -179,8 +179,8 @@ export default {
     margin-left: 0;
   }
 }
-#AlgoConteneur .medal {
-  background-color: #bb4646;
+#WebConteneur .medal {
+  background-color: #4691bd;
   height: 100%;
   display: flex;
   border-radius: 10px 0px 0px 10px;
@@ -210,8 +210,8 @@ export default {
   line-height: 1.1em;
   color: #000000;
 }
-#AlgoConteneur .subTitle {
-  background: #bb4646;
+#WebConteneur .subTitle {
+  background: #4691bd;
   border-radius: 10px;
   display: flex;
   flex-direction: row;

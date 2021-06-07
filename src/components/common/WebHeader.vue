@@ -1,37 +1,37 @@
 <template>
   <header>
-    <Banner rectColor="#BB4646" pathColor="#A12C2b">
-      <h1 class="text-white text-center courseTitle">ALGORITHMIE</h1>
+    <Banner rectColor="#4691BD" pathColor="#1E6995">
+      <h1 class="text-white text-center courseTitle">DEVELOPPEMENT WEB</h1>
 
-      <neural></neural>
+      <Code></Code>
       <slot></slot>
-      <algorithm_left></algorithm_left>
-      <algorithm_right></algorithm_right>
+      <Computer></Computer>
+      <Www></Www>
     </Banner>
   </header>
 </template>
 
 <script>
-import neural from "../../assets/svg/icons/Algo/neural";
-import algorithm_left from "../../assets/svg/icons/Algo/algorithm_left";
-import algorithm_right from "../../assets/svg/icons/Algo/algorithm_right";
+import Code from "../../assets/svg/icons/dev web/code.vue";
+import Computer from "../../assets/svg/icons/dev web/computer.vue";
+import Www from "../../assets/svg/icons/dev web/www.vue";
 import Banner from "../../assets/svg/Headers/bannerObj.vue";
 
 export default {
   components: {
-    neural,
-    algorithm_left,
-    algorithm_right,
+    Code,
+    Computer,
+    Www,
     Banner,
   },
 };
 </script>
 
 <style>
-#algoSubTitle {
+#WebSubTitle {
   position: absolute;
 
-  top: 60%;
+  top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: Roboto;
@@ -43,7 +43,7 @@ export default {
 
   color: #ffffff;
 }
-.algoTitleText {
+.WebTitleText {
   font-family: Alatsi;
   font-style: normal;
   font-weight: normal;

@@ -1,15 +1,21 @@
 <template>
   <div id="Discover">
     Découvrir
-    <div
-      id="discoverButton"
+
+    <ArrowBottom
+      colorArrow="black"
       v-on:click="scrollToElement({ behavior: 'smooth' })"
-    ></div>
+    ></ArrowBottom>
   </div>
 </template>
 
 <script>
+import ArrowBottom from "../../assets/svg/icons/buttons/arrowbottom.vue";
+
 export default {
+  components: {
+    ArrowBottom,
+  },
   methods: {
     scrollToElement(options) {
       const el = document.getElementsByClassName("CoursePage")[0];
@@ -25,13 +31,13 @@ export default {
 <style>
 #Discover {
   position: absolute;
-
-  top: 80%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%);
-
   display: flex;
+  align-items: center;
   flex-direction: column;
+  z-index: 2;
 }
 #discoverButton {
   cursor: pointer;

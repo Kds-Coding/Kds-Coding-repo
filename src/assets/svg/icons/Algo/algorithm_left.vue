@@ -4,7 +4,7 @@
     :width="width"
     :height="height"
     xmlns="http://www.w3.org/2000/svg"
-    style="left: 7%; top: 45%; position: absolute; z-index: 2"
+    style="left: 7%; top: 35%; position: absolute; z-index: 2"
   >
     <g fill="#d7dee2">
       <path
