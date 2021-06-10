@@ -1,12 +1,14 @@
 <template>
   <header>
     <Banner rectColor="#4691BD" pathColor="#1E6995">
-      <h1 class="text-white text-center courseTitle">DEVELOPPEMENT WEB</h1>
-
-      <Code></Code>
-      <slot></slot>
       <Computer></Computer>
       <Www></Www>
+      <Code></Code>
+      <div id="headerTextBox">
+        <h1 class="text-white text-center courseTitle">DEVELOPPEMENT WEB</h1>
+
+        <slot></slot>
+      </div>
     </Banner>
   </header>
 </template>
@@ -28,35 +30,5 @@ export default {
 </script>
 
 <style>
-#WebSubTitle {
-  position: absolute;
-
-  top: 67%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 51px;
-  text-align: center;
-
-  color: #ffffff;
-}
-.WebTitleText {
-  font-family: Alatsi;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 37px;
-  line-height: 47px;
-  text-align: center;
-  z-index: 2;
-  color: #000000;
-  position: absolute;
-  top: 70%;
-  width: 40%;
-  transform: translate(-50%);
-  left: 50%;
-}
 </style>
 

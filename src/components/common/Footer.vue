@@ -9,6 +9,7 @@ export default {};
 </script>
 
 <style>
+/** USE CSS WHEN YOU CREATE NEW H1 AND P TAG ON OTHER VIEWS */
 #bannerFooter {
   max-width: 100%;
   width: 100%;

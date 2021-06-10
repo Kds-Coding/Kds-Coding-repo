@@ -7,9 +7,10 @@
     :height="height"
     xmlns="http://www.w3.org/2000/svg"
     style="left: 40%; top: 10%; position: absolute; z-index: 2"
+    @mouseover="turn"
   >
     <title :id="iconName" lang="fr">{{ iconName }} icon</title>
-    <g fill="#68607c">
+    <g fill="#68607c" ref="bubble">
       <path
         d="m13.55 13h14.9v2h-14.9z"
         transform="matrix(.94 -.342 .342 .94 -3.524 8.035)"
@@ -72,6 +73,7 @@
 </template>
 
 <script>
+//import { TweenMax, Sine } from "gsap";
 export default {
   props: {
     iconName: {
@@ -87,6 +89,20 @@ export default {
       default: 188.232143,
     },
   },
+  // methods: {
+  //   turn() {
+  //     this.scissorAnim(this.$refs.bubble, 30);
+  //   },
+  //   scissorAnim(el, rot) {
+  //     TweenMax.to(el, 0.25, {
+  //       translateX: rot,
+  //       repeat: 3,
+  //       yoyo: true,
+  //       svgOrigin: "50 45",
+  //       ease: Sine.easeInOut,
+  //     });
+  //   },
+  // },
 };
 </script>
 

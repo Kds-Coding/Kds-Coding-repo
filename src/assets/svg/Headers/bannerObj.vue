@@ -46,20 +46,45 @@ export default {
 </script>
 
 <style>
-.courseTitle {
+#headerTextBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   z-index: 3;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+  transform: translateY(-50%);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.courseTitle {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 106px;
-  line-height: 136px;
+  font-size: 5em;
+  line-height: 1em;
+}
+#HeaderSubTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: 2em;
   text-align: center;
 
   color: #ffffff;
+}
+.HeaderTitleText {
+  width: 40%;
+  font-family: Alatsi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 1.2em;
+  text-align: center;
+  color: #000000;
 }
 </style>
 <!--

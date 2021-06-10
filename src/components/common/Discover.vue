@@ -1,17 +1,18 @@
 <template>
   <div id="Discover">
-    Découvrir
+    <span class="discoverText">Découvrir </span>
 
     <ArrowBottom
       colorArrow="black"
       v-on:click="scrollToElement({ behavior: 'smooth' })"
+      height="64"
+      width="64"
     ></ArrowBottom>
   </div>
 </template>
 
 <script>
 import ArrowBottom from "../../assets/svg/icons/buttons/arrowbottom.vue";
-
 export default {
   components: {
     ArrowBottom,
@@ -31,7 +32,7 @@ export default {
 <style>
 #Discover {
   position: absolute;
-  top: 70%;
+  top: 83%;
   left: 50%;
   transform: translate(-50%);
   display: flex;
@@ -39,18 +40,16 @@ export default {
   flex-direction: column;
   z-index: 2;
 }
-#discoverButton {
-  cursor: pointer;
-  background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  width: 0;
-  height: 0;
-  text-decoration: none;
-  display: inline-block;
-  border-right: 16px solid transparent;
-  border-left: 16px solid transparent;
-  transform: translate(50%);
-  border-top: 20px solid #fff;
+.discoverText {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #000000;
 }
 </style>

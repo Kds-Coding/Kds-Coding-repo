@@ -1,10 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
-import Algo from '@/views/Algo.vue'
-import AlgoCourse1 from '@/views/AlgoCourse1.vue'
 
-import Web from '@/views/Web.vue'
-import WebCourse1 from '@/views/WebCourse1.vue'
+//Algorithm pages
+import Algo from '@/views/algorithm/Algo.vue'
+import AlgoCourse1 from '@/views/algorithm/AlgoCourse1.vue'
+
+//Web pages
+import Web from '@/views/web_development/Web.vue'
+import WebCourse1 from '@/views/web_development/WebCourse1.vue'
+
+//Other pages
 
 import About from '@/views/About.vue'
 import NotFound from '@/views/NotFound.vue'

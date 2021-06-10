@@ -1,12 +1,13 @@
 <template>
   <header>
     <Banner rectColor="#BB4646" pathColor="#A12C2b">
-      <h1 class="text-white text-center courseTitle">ALGORITHMIE</h1>
-
       <neural></neural>
-      <slot></slot>
       <algorithm_left></algorithm_left>
       <algorithm_right></algorithm_right>
+      <div id="headerTextBox">
+        <h1 class="text-white text-center courseTitle">ALGORITHMIE</h1>
+        <slot></slot>
+      </div>
     </Banner>
   </header>
 </template>

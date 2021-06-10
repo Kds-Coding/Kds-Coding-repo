@@ -13,6 +13,7 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "firebase": "^8.6.2",
+    "gsap": "^3.6.1",
     "portal-vue": "^2.1.7",
     "vue": "^3.0.11",
     "vue-router": "^4.0.0-0"

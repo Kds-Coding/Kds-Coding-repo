@@ -132,15 +132,15 @@
 </template>
 
 <script>
-import WebHeader from "../components/common/WebHeader.vue";
-import Discover from "../components/common/Discover.vue";
-import Footer from "../components/common/Footer.vue";
-import GoldMedal from "../assets/svg/icons/medal/gold-medal";
-import SilverMedal from "../assets/svg/icons/medal/silver-medal";
-import Avatar1 from "../assets/svg/icons/Avatar/Avatar1";
-import Banner from "../assets/svg/Headers/bannerObj.vue";
-import Arrow from "../assets/svg/icons/buttons/arrow.vue";
-import Play from "../assets/svg/icons/buttons/play_circle_filled.vue";
+import WebHeader from "@/components/common/WebHeader.vue";
+import Discover from "@/components/common/Discover.vue";
+import Footer from "@/components/common/Footer.vue";
+import GoldMedal from "@/assets/svg/icons/medal/gold-medal";
+import SilverMedal from "@/assets/svg/icons/medal/silver-medal";
+import Avatar1 from "@/assets/svg/icons/Avatar/Avatar1";
+import Banner from "@/assets/svg/Headers/bannerObj.vue";
+import Arrow from "@/assets/svg/icons/buttons/arrow.vue";
+import Play from "@/assets/svg/icons/buttons/play_circle_filled.vue";
 
 export default {
   components: {

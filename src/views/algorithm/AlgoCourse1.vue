@@ -1,19 +1,19 @@
 <template>
-  <WebHeader>
-    <h2 id="WebSubTitle">cours 1 - Intro au developpement web !</h2>
-    <p class="WebTitleText">
+  <AlgoHeader>
+    <h2 id="HeaderSubTitle">cours 1 - Intro à l'algo !</h2>
+    <p class="HeaderTitleText">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore.
     </p>
-  </WebHeader>
+  </AlgoHeader>
 </template>
 
 <script>
-import WebHeader from "../components/common/WebHeader.vue";
+import AlgoHeader from "@/components/common/AlgoHeader.vue";
 
 export default {
   components: {
-    WebHeader,
+    AlgoHeader,
   },
 };
 </script>
