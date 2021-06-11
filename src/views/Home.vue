@@ -28,7 +28,7 @@
     <br />
     <br />
     <!-- Prendre des variables scss et faire potentielement un component.-->
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <article class="col-lg-4" id="">
           <div class="card" style="width: 100%; height: 30em; z-index: 2">
@@ -195,7 +195,7 @@ article h1 {
   font-size: 2.1em;
   line-height: 135.94%;
   margin: 15px;
-
+  width: 100%;
   /* identical to box height, or 49px */
   text-align: center;
 }
