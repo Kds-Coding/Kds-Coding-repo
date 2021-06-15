@@ -1,6 +1,6 @@
 <template>
   <AlgoHeader id="AlgoHeader">
-    <h2 id="algoSubTitle">Cours et exercices</h2>
+    <h2 id="HeaderSubTitle">Cours et exercices</h2>
     <Discover></Discover>
   </AlgoHeader>
   <div id="AlgoConteneur">
@@ -18,8 +18,9 @@
           Niveau : Facile
           <h1>cours 1</h1>
           <p>
-            Ce cours va te permettre de savoir à quoi ça sert et en quoi est-ce utile l'algorithmie dans la programmation
-             et d'entrer doucement dans la logique d'un programme.
+            Ce cours va te permettre de savoir à quoi ça sert et en quoi est-ce
+            utile l'algorithmie dans la programmation et d'entrer doucement dans
+            la logique d'un programme.
           </p>
         </div>
         <div class="play">
@@ -132,15 +133,15 @@
 </template>
 
 <script>
-import AlgoHeader from "../components/common/AlgoHeader.vue";
-import Discover from "../components/common/Discover.vue";
-import Footer from "../components/common/Footer.vue";
-import GoldMedal from "../assets/svg/icons/medal/gold-medal";
-import SilverMedal from "../assets/svg/icons/medal/silver-medal";
-import Avatar1 from "../assets/svg/icons/Avatar/Avatar1";
-import Banner from "../assets/svg/Headers/bannerObj.vue";
-import Arrow from "../assets/svg/icons/buttons/arrow.vue";
-import Play from "../assets/svg/icons/buttons/play_circle_filled.vue";
+import AlgoHeader from "@/components/common/AlgoHeader.vue";
+import Discover from "@/components/common/Discover.vue";
+import Footer from "@/components/common/Footer.vue";
+import GoldMedal from "@/assets/svg/icons/medal/gold-medal";
+import SilverMedal from "@/assets/svg/icons/medal/silver-medal";
+import Avatar1 from "@/assets/svg/icons/Avatar/Avatar1";
+import Banner from "@/assets/svg/Headers/bannerObj.vue";
+import Arrow from "@/assets/svg/icons/buttons/arrow.vue";
+import Play from "@/assets/svg/icons/buttons/play_circle_filled.vue";
 
 export default {
   components: {
@@ -199,7 +200,7 @@ export default {
   font-weight: normal;
   font-size: 2em;
   line-height: 1.1em;
-
+  text-align: start;
   color: #000000;
 }
 .content h1 {
