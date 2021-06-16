@@ -137,6 +137,84 @@ export default {
   font-size: 23.0902px;
   line-height: 27px;
 }
+
+/* ---------------------------------------------------
+    COURSE PAGES STYLE
+----------------------------------------------------- */
+.CourseContainer article {
+  margin: 35px;
+  display: flex;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.course {
+  height: 300px;
+  h1 {
+    font-size: 4.1em;
+    margin: 2px;
+  }
+}
+
+.excercise {
+  height: 125px;
+  h1 {
+    font-size: 2.1em;
+    margin-left: 0;
+  }
+}
+.medal {
+  height: 100%;
+  display: flex;
+  border-radius: 10px 0px 0px 10px;
+
+  justify-content: center;
+}
+.content {
+  background-color: #0000;
+  height: 100%;
+  width: 80%;
+  margin-left: 5px;
+}
+.content p {
+  font-family: Alatsi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 1.1em;
+
+  color: #000000;
+}
+.content h1 {
+  text-align: start;
+  font-family: Alatsi;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.1em;
+  color: #000000;
+}
+.subTitle {
+  background: #4691bd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  h1 {
+    font-family: Alatsi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 83.4044px;
+    line-height: 107px;
+
+    color: #ffffff;
+  }
+}
+.play {
+  display: flex;
+  align-items: center;
+  svg {
+    cursor: pointer;
+  }
+}
 </style>
 
    

@@ -8,6 +8,7 @@ import AlgoCourse1 from '@/views/algorithm/AlgoCourse1.vue'
 //Web pages
 import Web from '@/views/web_development/Web.vue'
 import WebCourse1 from '@/views/web_development/WebCourse1.vue'
+import WebCourse3 from '@/views/web_development/WebCourse3.vue'
 
 //Other pages
 
@@ -48,10 +49,16 @@ const routes = [
     path: '/web',
     name: 'Web',
     component: Web,
-  }, {
+  }, 
+  {
     path: '/web/course1',
     name: 'Course1',
     component: WebCourse1,
+  },
+   {
+    path: '/web/course3',
+    name: 'Chapitre 3',
+    component: WebCourse3,
   },
   
 ]

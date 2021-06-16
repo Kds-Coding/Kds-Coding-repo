@@ -52,9 +52,9 @@ export default {
   width: 100%;
   z-index: 3;
   position: absolute;
-  top: 50%;
+  top: 60%;
 
-  transform: translateY(-50%);
+  transform: translateY(-55%);
   justify-content: center;
   align-content: center;
   align-items: center;

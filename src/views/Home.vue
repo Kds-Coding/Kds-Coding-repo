@@ -31,11 +31,11 @@
     <div class="container">
       <div class="row">
         <article class="col-lg-4" id="">
-          <div class="card" style="width: 100%; height: 30em; z-index: 2">
+          <div class="card blockDiv">
             <div class="fond" style="background-color: #a12c2c"></div>
 
             <img
-              class="image-fluid"
+              class="card-img-top"
               src="../../public/img/home/Algorithm.png"
               alt="Card image cap"
             />
@@ -58,11 +58,11 @@
         </article>
 
         <article class="col-lg-4" id="">
-          <div class="card" style="width: 100%; height: 30em; z-index: 2">
+          <div class="card blockDiv">
             <div class="fond" style="background-color: #1e6995"></div>
 
             <img
-              class="image-fluid"
+              class="card-img-top"
               src="../../public/img/home/DevWeb.png"
               alt="Card image cap"
             />
@@ -86,11 +86,11 @@
         </article>
 
         <article class="col-lg-4" id="">
-          <div class="card" style="width: 100%; height: 30em; z-index: 2">
+          <div class="card blockDiv">
             <div class="fond" style="background-color: #178c3f"></div>
 
             <img
-              class="image-fluid"
+              class="card-img-top"
               src="../../public/img/home/DevObj.png"
               alt="Card image cap"
             />
@@ -190,7 +190,7 @@ header .welcome {
 
 /******************* TEXT STYLE************ */
 
-article h1 {
+#homePage article h1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -201,7 +201,7 @@ article h1 {
   /* identical to box height, or 49px */
   text-align: center;
 }
-article p {
+#homePage article p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -221,14 +221,19 @@ h2 {
 /******************* CONTENT STYLE************ */
 
 #homePage article {
-  height: 700px;
+  height: 50em;
+}
+.blockDiv {
+  width: 100%;
+  height: 80%;
+  z-index: 2;
 }
 .fond {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 55%;
   z-index: -1;
   margin: -15px;
 }

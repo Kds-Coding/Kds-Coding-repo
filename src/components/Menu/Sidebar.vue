@@ -40,13 +40,13 @@
       </li>
       <ul class="collapse list-unstyled subMenu" id="DevWebSubMenu">
         <li>
-          <router-link to="/algo/course1">course1</router-link>
+          <router-link to="/web/course1">course1</router-link>
         </li>
         <li>
-          <router-link class="" to="/algo/course2">course2</router-link>
+          <router-link class="" to="/web/course2">course2</router-link>
         </li>
         <li>
-          <router-link class="" to="/algo/course1">course2</router-link>
+          <router-link class="" to="/web/course3">course2</router-link>
         </li>
       </ul>
       <li class="nav-item" id="DevObj">

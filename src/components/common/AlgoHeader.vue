@@ -29,35 +29,5 @@ export default {
 </script>
 
 <style>
-#algoSubTitle {
-  position: absolute;
-
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 51px;
-  text-align: center;
-
-  color: #ffffff;
-}
-.algoTitleText {
-  font-family: Alatsi;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 37px;
-  line-height: 47px;
-  text-align: center;
-  z-index: 2;
-  color: #000000;
-  position: absolute;
-  top: 70%;
-  width: 40%;
-  transform: translate(-50%);
-  left: 50%;
-}
 </style>
 

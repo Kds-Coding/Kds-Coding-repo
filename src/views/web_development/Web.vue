@@ -1,9 +1,9 @@
 <template>
   <WebHeader id="WebHeader">
-    <h2 id="WebSubTitle">Cours et exercices</h2>
+    <h2 id="HeaderSubTitle">Cours et exercices</h2>
     <Discover></Discover>
   </WebHeader>
-  <div id="WebConteneur">
+  <div id="WebConteneur" class="CourseContainer">
     <br />
     <div class="container CoursePage">
       <div class="col-lg-12 subTitle">
@@ -54,13 +54,19 @@
         </div>
         <div class="content">
           Niveau : Facile
-          <h1>cours 3</h1>
+          <h1>CHAPITRE 3</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
+            Nous apprendrons comment écrire la structure de notre site avec
+            HTML. Cette structure va nous permettre d'accueillir le contenu du
+            site.
           </p>
         </div>
-        <div class="play"><Play circleColor="#4691BD"></Play></div>
+        <div class="play">
+          <Play
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/course3')"
+          ></Play>
+        </div>
       </article>
       <div class="container-fluid text-center" style="margin: 20px">
         <Arrow arrowTransform="rotate(270)" target="WebHeader"></Arrow>
@@ -158,80 +164,8 @@ export default {
 </script>
 
 <style lang="scss">
-#WebConteneur article {
-  margin: 35px;
-  display: flex;
-  background: #ffffff;
-  border-radius: 10px;
-}
-.course {
-  height: 300px;
-  h1 {
-    font-size: 4.1em;
-    margin: 2px;
-  }
-}
-
-.excercise {
-  height: 125px;
-  h1 {
-    font-size: 2.1em;
-    margin-left: 0;
-  }
-}
-#WebConteneur .medal {
-  background-color: #4691bd;
-  height: 100%;
-  display: flex;
-  border-radius: 10px 0px 0px 10px;
-
-  justify-content: center;
-}
-.content {
-  background-color: #0000;
-  height: 100%;
-  width: 80%;
-  margin-left: 5px;
-}
-.content p {
-  font-family: Alatsi;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2em;
-  line-height: 1.1em;
-
-  color: #000000;
-}
-.content h1 {
-  text-align: start;
-  font-family: Alatsi;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.1em;
-  color: #000000;
-}
+#WebConteneur .medal,
 #WebConteneur .subTitle {
-  background: #4691bd;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  h1 {
-    font-family: Alatsi;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 83.4044px;
-    line-height: 107px;
-
-    color: #ffffff;
-  }
-}
-.play {
-  display: flex;
-
-  align-items: center;
-  svg {
-    cursor: pointer;
-  }
+  background-color: #4691bd;
 }
 </style>

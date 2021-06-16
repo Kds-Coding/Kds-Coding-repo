@@ -1,14 +1,19 @@
 <template>
-  <AlgoHeader id="AlgoHeader">
-    <h2 id="HeaderSubTitle">Cours et exercices</h2>
-    <Discover></Discover>
-  </AlgoHeader>
-  <div id="AlgoConteneur" class="CourseContainer">
+  <WebHeader>
+    <h2 id="HeaderSubTitle">CHAPITRE 3 - La toile comme disent les jeunes !</h2>
+    <p class="HeaderTitleText text-center">
+      <bold>Comprendre la structure d'une page web.</bold>
+      Nous apprendrons comment écrire la structure de notre site avec HTML.
+      Cette structure va nous permettre d'accueillir le contenu du site.
+    </p>
+  </WebHeader>
+  <div id="BouttonContainer"></div>
+  <div id="WebConteneur" class="CourseContainer">
     <br />
     <div class="container CoursePage">
       <div class="col-lg-12 subTitle">
         <div class="icon"><Avatar1></Avatar1></div>
-        <h1>Cours</h1>
+        <h1>1 . La balise HTML</h1>
       </div>
       <article class="col-lg-10 course">
         <div class="medal">
@@ -18,15 +23,14 @@
           Niveau : Facile
           <h1>cours 1</h1>
           <p>
-            Ce cours va te permettre de savoir à quoi ça sert et en quoi est-ce
-            utile l'algorithmie dans la programmation et d'entrer doucement dans
-            la logique d'un programme.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore.
           </p>
         </div>
         <div class="play">
           <Play
-            circleColor="#BB4646"
-            @click="() => $router.push('/algo/course1')"
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/course1')"
           ></Play>
         </div>
       </article>
@@ -44,8 +48,8 @@
         </div>
         <div class="play">
           <Play
-            circleColor="#BB4646"
-            @click="() => $router.push('/algo/course1')"
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/course1')"
           ></Play>
         </div>
       </article>
@@ -55,16 +59,17 @@
         </div>
         <div class="content">
           Niveau : Facile
-          <h1>cours 3</h1>
+          <h1>CHAPITRE 3</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
+            Nous apprendrons comment écrire la structure de notre site avec
+            HTML. Cette structure va nous permettre d'accueillir le contenu du
+            site.
           </p>
         </div>
-        <div class="play"><Play circleColor="#BB4646"></Play></div>
+        <div class="play"><Play circleColor="#4691BD"></Play></div>
       </article>
       <div class="container-fluid text-center" style="margin: 20px">
-        <Arrow arrowTransform="rotate(270)" target="AlgoHeader"></Arrow>
+        <Arrow arrowTransform="rotate(270)" target="WebHeader"></Arrow>
         <Arrow arrowTransform="rotate(90)" target="ExerciceConteneur"></Arrow>
       </div>
     </div>
@@ -82,7 +87,7 @@
           Niveau : Facile
           <h1>Exercice 1 :Lorem ipsum dolor sit amet</h1>
         </div>
-        <div class="play"><Play circleColor="#BB4646"></Play></div>
+        <div class="play"><Play circleColor="#4691BD"></Play></div>
       </article>
       <article class="col-lg-10 excercise">
         <div class="medal">
@@ -92,75 +97,36 @@
           Niveau : Facile
           <h1>Exercice 2 :Lorem ipsum dolor sit amet</h1>
         </div>
-        <div class="play"><Play circleColor="#BB4646"></Play></div>
+        <div class="play"><Play circleColor="#4691BD"></Play></div>
       </article>
     </div>
     <div class="container-fluid text-center" style="margin: 20px">
-      <Arrow arrowTransform="rotate(270)" target="AlgoConteneur"></Arrow>
+      <Arrow arrowTransform="rotate(270)" target="WebConteneur"></Arrow>
     </div>
   </div>
-
-  <Footer>
-    <Banner
-      rectColor="#46BB6E"
-      pathColor="#178C3F"
-      height="100%"
-      width="100%"
-      class="col-lg-6"
-    >
-      <div class="centerLink">
-        <h1 class="footerLink">DEVELOPPEMENT ORIENTE</h1>
-        <Arrow arrowTransform="rotate(180)"></Arrow>
-      </div>
-    </Banner>
-
-    <Banner
-      rectColor="#4691BD"
-      pathColor="#1E6995"
-      height="100%"
-      width="100%"
-      class="col-lg-6"
-    >
-      <div class="centerLink">
-        <h1 class="footerLink">DEVELOPPEMENT WEB</h1>
-        <Arrow
-          arrowTransform="rotate(0)"
-          @click="() => $router.push('/web')"
-        ></Arrow>
-      </div>
-    </Banner>
-  </Footer>
 </template>
 
 <script>
-import AlgoHeader from "@/components/common/AlgoHeader.vue";
-import Discover from "@/components/common/Discover.vue";
-import Footer from "@/components/common/Footer.vue";
+import WebHeader from "@/components/common/WebHeader.vue";
 import GoldMedal from "@/assets/svg/icons/medal/gold-medal";
 import SilverMedal from "@/assets/svg/icons/medal/silver-medal";
 import Avatar1 from "@/assets/svg/icons/Avatar/Avatar1";
-import Banner from "@/assets/svg/Headers/bannerObj.vue";
 import Arrow from "@/assets/svg/icons/buttons/arrow.vue";
 import Play from "@/assets/svg/icons/buttons/play_circle_filled.vue";
 
 export default {
   components: {
-    AlgoHeader,
-    Discover,
+    WebHeader,
+
     GoldMedal,
     SilverMedal,
     Avatar1,
-    Banner,
-    Footer,
+
     Arrow,
     Play,
   },
 };
 </script>
 
-<style lang="scss">
-#AlgoConteneur .medal,
-#AlgoConteneur .subTitle {
-  background-color: #bb4646;
-}
+<style>
 </style>
