@@ -52,6 +52,7 @@ export default {
   components: {
     Sidebar,
   },
+
   data() {
     return {
       active: false,
