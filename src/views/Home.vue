@@ -54,7 +54,7 @@
               <button
                 type="button"
                 id="seeMore"
-                @click="$router.push('/algo'), scrollToTop()"
+                @click="$router.push('/algo')"
                 style="background-color: #a12c2c"
               >
                 En voir plus
