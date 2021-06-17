@@ -70,8 +70,17 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+   // Fonction wich make a scroll to the top of new page
+   scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  },
+  history: createWebHistory(),
   routes,
+ 
   
  
  
