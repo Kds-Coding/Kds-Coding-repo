@@ -22,8 +22,10 @@
     <h2 class="text-center" style="color: #4691bb">Bienvenue</h2>
 
     <p class="text-center">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore.
+      Bienvenue à toi ! Sur ce site tu apprendras les bases de la programmation dans les deux directions différentes qui sont la programmation orienté et
+      la programmation Web !
+      Le plus important si tu es un apprenti ou que tu découvres ce merveilleux monde de la programmation, la partie "Algorithmie" est obligatoire !
+      Alors lance-toi, c'est le moment ou jamais !
     </p>
     <br />
     <br />
@@ -71,7 +73,7 @@
                 DEVELOPPEMENT WEB
               </h1>
               <p class="card-text text-center">
-                Durant ces cours, tu vas apprendre à programmer un site web
+                Durant ces cours, tu vas apprendre à programmer un site web petit à petit en apprenant comment cela fonctionne
               </p>
               <button
                 type="button"
@@ -106,7 +108,7 @@
                 @click="$router.push('/obj'), scrollToTop()"
                 style="background-color: #178c3f"
               >
-                See more
+                En voir plus
               </button>
             </div>
           </div>
