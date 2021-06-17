@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue'
 //Algorithm pages
 import Algo from '@/views/algorithm/Algo.vue'
 import AlgoCourse1 from '@/views/algorithm/AlgoCourse1.vue'
+import AlgoCourse2 from '@/views/algorithm/AlgoCourse2.vue'
 
 //Web pages
 import Web from '@/views/web_development/Web.vue'
@@ -40,6 +41,11 @@ const routes = [
       name: 'Cours 1 - Algo',
       component: AlgoCourse1
       },
+      {
+        path: '/algo/Course2',
+        name: 'Cours 2 - Algo',
+        component: AlgoCourse2
+        },
   {
     path: '/notfound',
     name: 'NotFound',

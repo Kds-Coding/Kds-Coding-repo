@@ -45,7 +45,7 @@
         <div class="play">
           <Play
             circleColor="#BB4646"
-            @click="() => $router.push('/algo/course1')"
+            @click="() => $router.push('/algo/course2')"
           ></Play>
         </div>
       </article>
@@ -143,7 +143,7 @@ import Banner from "@/assets/svg/Headers/bannerObj.vue";
 import Arrow from "@/assets/svg/icons/buttons/arrow.vue";
 import Play from "@/assets/svg/icons/buttons/play_circle_filled.vue";
 
-export default {
+export default { 
   components: {
     AlgoHeader,
     Discover,
