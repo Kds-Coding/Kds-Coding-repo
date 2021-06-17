@@ -23,10 +23,13 @@
 
     <p class="text-center">
       Bienvenue à toi !
-      <br/> Sur ce site tu apprendras les bases de la programmation dans les deux directions différentes qui sont la programmation orienté et
-      la programmation Web !
-      Le plus important si tu es un apprenti ou que tu découvres ce merveilleux monde de la programmation, la partie "Algorithmie" est obligatoire !
-      Alors lance-toi, c'est le moment ou jamais !
+      <br />
+      Sur ce site tu apprendras les bases de la programmation dans les deux
+      directions différentes qui sont la programmation orienté et la
+      programmation Web ! Le plus important si tu es un apprenti ou que tu
+      découvres ce merveilleux monde de la programmation, la partie
+      "Algorithmie" est obligatoire ! Alors lance-toi, c'est le moment ou jamais
+      !
     </p>
     <br />
     <br />
@@ -74,7 +77,8 @@
                 DEVELOPPEMENT WEB
               </h1>
               <p class="card-text text-center">
-                Durant ces cours, tu vas apprendre à programmer un site web petit à petit en apprenant comment cela fonctionne
+                Durant ces cours, tu vas apprendre à programmer un site web
+                petit à petit en apprenant comment cela fonctionne
               </p>
               <button
                 type="button"
@@ -106,7 +110,7 @@
               <button
                 type="button"
                 id="seeMore"
-                @click="$router.push('/obj'), scrollToTop()"
+                @click="$router.push('/obj')"
                 style="background-color: #178c3f"
               >
                 En voir plus
@@ -127,11 +131,7 @@ export default {
   name: "Home",
   components: { Discover },
 
-  methods: {
-    scrollToTop() {
-      window.scrollTo(0, 0);
-    },
-  },
+  methods: {},
 };
 </script>
 <style lang="scss">
