@@ -22,7 +22,8 @@
     <h2 class="text-center" style="color: #4691bb">Bienvenue</h2>
 
     <p class="text-center">
-      Bienvenue à toi ! Sur ce site tu apprendras les bases de la programmation dans les deux directions différentes qui sont la programmation orienté et
+      Bienvenue à toi !
+      <br/> Sur ce site tu apprendras les bases de la programmation dans les deux directions différentes qui sont la programmation orienté et
       la programmation Web !
       Le plus important si tu es un apprenti ou que tu découvres ce merveilleux monde de la programmation, la partie "Algorithmie" est obligatoire !
       Alors lance-toi, c'est le moment ou jamais !
