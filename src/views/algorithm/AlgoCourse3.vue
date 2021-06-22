@@ -6,7 +6,7 @@
       un élément central dans tout algorithme digne de ce nom.
     </p>
   </Algoheader>
- </template>
+</template>
  
 <script>
  import AlgoHeader from "@/components/common/AlgoHeader.vue";
