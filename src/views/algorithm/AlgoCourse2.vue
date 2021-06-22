@@ -20,12 +20,9 @@ Les boucles. La vie comme la programmation est pleine de routines et de sous-rou
 Les boucles. La vie comme la programmation est pleine de routines et de sous-routines répétitives.
  Chaque jour on se réveille et on se brosse les dents. On ne se brosse pas seulement qu'une dent. 
  Nous brossons chaque dent dans notre bouche jusqu'à ce que nous nous brossions toutes les dents.</p>
-    <svg height="100pt" 
-    viewBox="0 -1 513.22 513" 
-    width="100pt" xmlns="http://www.w3.org/2000/svg">
-    <path d="m240.015625 495.46875c-.015625-8.207031 6.175781-15.277344 14.367187-15.886719 100.882813-7.472656 180.6875-92 180.6875-194.734375l32-.882812v.882812c0 119.261719-92.429687 217.421875-209.40625 226.574219-9.457031.734375-17.632812-6.480469-17.648437-15.953125zm0 0" fill="#fbc02d"/><path d="m113.871094 456.878906c-70.222656-40.511718-113.871094-116-113.871094-196.992187 0-34.207031 7.710938-67.953125 22.414062-98.527344 3.875-8.050781 13.601563-11.3125 21.347657-6.867187l1.535156.882812c7.039063 4.046875 9.328125 12.800781 5.824219 20.109375-12.546875 26.210937-19.121094 55.105469-19.121094 84.402344 0 69.597656 37.503906 134.449219 97.855469 169.261719zm0 0" fill="#4dd0e1"/><path d="m437.441406 137.886719c-7.089844 4.144531-16.304687 2.320312-20.960937-4.449219-36.242188-52.65625-96.703125-84.832031-161.054688-84.832031-34.515625 0-68.433593 9.121093-98.097656 26.382812l-16.097656-27.644531c34.546875-20.113281 74.015625-30.738281 114.195312-30.738281 74.621094 0 144.734375 37.152343 186.957031 98.015625 5.394532 7.792968 3.234376 18.496094-4.941406 23.265625zm0 0" fill="#e64a19"/><path d="m204.160156 96.109375h-80v-80c0-8.832031 7.167969-16 16-16 8.832032 0 16 7.167969 16 16v48h48c8.832032 0 16 7.167969 16 16s-7.167968 16-16 16zm0 0" fill="#ff7043"/><path d="m136 464.109375h-80c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h48v-48c0-8.832031 7.167969-16 16-16s16 7.167969 16 16zm0 0" fill="#80deea"/><path d="m485.902344 321.34375-33.949219-33.9375-33.953125 33.9375c-6.238281 6.238281-16.382812 6.238281-22.625 0-6.253906-6.257812-6.238281-16.386719 0-22.625l56.578125-56.5625 56.574219 56.5625c6.257812 6.238281 6.257812 16.382812 0 22.625-6.238282 6.253906-16.367188 6.253906-22.625 0zm0 0" fill="#fdd835"/></svg>
+    <div class="imgBox"><loop></loop></div>
     <p>Imaginons que nous ayons écrit des instructions pour préparer des glaces et nous les mettons dans une fonction pratique “preparer glace”. Afin que je puisse les réutiliser chaque fois que j'en ai besoin , je dois préparer trois glaces d'affilée. Il n’y aura pas de problème, je peux juste appeler ma fonction trois fois correctement. Mais si j'avais besoin de préparer cinq, dix ou même mille glaces. Voici où une boucle sauve la journée.</p>
-    <div class="icon"><glace></glace></div>
+    <div class="imgBox"><glace></glace></div>
     <p>Une boucle vous permet de continuellement exécuter le même code plusieurs fois ou parcourir une routine jusqu'à ce qu'une condition d'arrêt soit remplie. 
 Il existe différents types de boucles et chaque langage de programmation à sa propre syntaxe mais toutes les boucles ont une chose en commun : une condition d'arrêt.
                <br><br>La condition est vérifiée à chaque tour et la boucle continue à fonctionner jusqu'à ce que la condition soit atteinte. Laissez-moi vous expliquer avec un exemple de la vie courante :
@@ -33,25 +30,94 @@ Si notre objectif est de préparer quatre glaces, la condition d'arrêt de la bo
 <br><br>La condition est vérifiée à chaque tour et la boucle continue à fonctionner jusqu'à ce que la condition soit atteinte. Laissez-moi vous expliquer avec un exemple de la vie courante :
 Si notre objectif est de préparer quatre glaces, la condition d'arrêt de la boucle spécifie de continuer à préparer les glaces jusqu'à ce que quatre glaces aient été préparées. Afin que notre boucle exécute des glaces préparées quatre fois en nous donnant quatre boucles de glaces entièrement préparées.
 </p>
-<div class="icon"><algorithm2></algorithm2></div>
-         <h2>Boucle For :</h2>
+<div class="imgBox"><algorithm2></algorithm2></div>
+         <h2>Boucle For</h2>
          <p>Mais il y a une boucle plus puissante et qui s'appelle la boucle for.
          <br><br>Dans une boucle for, on a une variable ou un compteur et on va dire pour notre compteur où il commence, peut-être qu'on veut qu'elle commence à zéro. peut-être qu'on veut qu'elle commence à trois. Ensuite on choisit quand est-ce qu'on veut qu'il s'arrête. Enfin on choisit par quoi on veut compter. Est-ce qu'on veut compter par 1 ? ou est-ce qu'on veut compter par autre chose ? Par exemple, on peut compter par cinq.
          <br><br>Remarque : les deux égal veut dire comparer deux choses pour voir si c'est égal.</p>
-         <img src="src/assets/svg/icons/for_loop.png" alt="for loop"  width="350" />
+         <div class="imgBox"><forloop></forloop></div>    
+ 
          <p>Voici un exemple:
 Dans notre boucle for, on a un compteur et on va le faire commencer à dix. On veut aussi s'arrêter à 20 et on augmente de 5 à chaque fois. Et la chose qu’on veut répéter est de boire un verre d’eau. Au final on a ce pseudocode:
 </p>
+<img src="../../../public/img/forloop.png" alt="forloop">
 <p>La boucle passe une fois quand le compteur est égal à 10 puis passe une deuxième fois quand le compteur est égal à 15. Et c’est fini parce qu' après 15, le compteur passe à 2O et quand on arrive à 20, la boucle est obligée de s'arrêter.
 <br><br>
 Elle vous laisse choisir votre point de départ, votre point d'arrivée et la quantité par laquelle vous comptez, c'est ce qu'on appelle l'incrément, c'est comme augmenter, mais on augmente quelque chose de la même quantité encore et encore.</p>
 
-          <h2>Boucle while :</h2>
-              <img src="src/assets/svg/icons/Algo/study 1 on.png" alt="study on"  width="350" /> 
-              <img src="src/assets/svg/icons/Algo/study 2 off.png" alt="study off"  width="350" /> 
+          <h2>Boucle while</h2>
+          <div class="imgBox">
+             <div><studyon></studyon></div> 
+             <div><studyoff></studyoff></div> 
+              </div>
           <p>Imagine toi que tu es en train de lire un livre. Ici la condition est vraie dans le cas où la lumière est allumée. Cette dernière phrase est traduite en pseudocode par “while( lumière allumée = true)“. Tu continues de lire le livre aussi longtemps que la lumière est allumée. Donc si quelqu'un vient et éteint cette lumière vous ne pouvez pas lire ce livre donc ou tu arrêteras de lire ce livre. Dans ce cas, nous utilisons la boucle while :</p>
+          <img src="../../../public/img/whileloop.png" alt="whileloop">
           <p>Les boucles nous permettent de dire à l'ordinateur par où commencer et fournissent une condition sur laquelle s'arrêter tout en quelques lignes de code faciles à lire.</p>
+          <div class="endp">
+            <p><br>Tu as beaucoup appris bravo! Tu as beaucoup de potentiel 😎
+Au prochain cours, tu apprendras à modifier l’apparence des éléments à ta guise, à très vite!<br>🖥❤️⌨️</p></div>
+<div id="BouttonContainer"></div>
+    <br />
+      <div class="col-lg-12 subTitle">
+        <div class="icon"><Avatar1></Avatar1></div>
+        <h1>Quiz - la boucle for !</h1>
+  </div>
+  <br />
+  <br />
+  <p>* la boucle commence à la parenthèse ouvrante  par "["
+ <br>* Le passage de la boucle est représenté par un cercle autour d'un chiffre.
+ <br>* la boucle s'arrête à la parenthèse fermentant  par "]" <br> Voici un exemple pour comprendre l’exercice :
+</p>
+<div class="imgBox">
+  <img src="../../../public/img/exercises/q0.png" alt="">
+</div>
+<div class="endp">
+  <p>à toi de jouer !</p>
+</div>
+
+        <div class="container-app">
+        
+         <div class="container-quiz">
+            <div class="quiz-header">
+              <h1>Quiz</h1>
+            </div>
+            <div class="quiz-main" v-for="(element,index) in questions.slice(a,b)" :key="index" v-show="quiz">
+              <div class="box-question">
+                <h3>Question {{b}}/{{questions.length}}</h3>
+                <p>{{element.question}}</p>
+                <div>
+                    <img :src="`../../../public/img/exercises/${nImage}.png`">
+                </div>
+              
+              </div>
+              <div class="box-suggestions">
+                  <ul>
+                    <li v-for="(item,index) in element.suggestions" :key="index" :class="select ? check(item) :'' " @click="selectResponse(item)">{{item.suggestion}}</li>
+                    </ul>
+              </div>
+            </div>
+            <div class="box-score" v-if="score_show">
+                <h3>Ton score est de</h3>
+                <h3>{{score}}/{{questions.length}}</h3>
+                <div class="btn-restard">
+                  <button @click="restartQuiz">Recommencer <i class="fas fa-sync-alt"></i></button>
+                </div>
+            </div>
+            <div class="quiz-footer">
+              <div class="box-button">
+                <button @click="skipQuestion">Passer</button>
+                <button @click="nextQuestion">Suivant</button>
+              </div>
+            </div>
+         </div>
+
        </div>
+  <br />
+  <br />
+
+       </div>
+
+       <router-view></router-view>
   </div>
 
 </template>
@@ -60,6 +126,11 @@ Elle vous laisse choisir votre point de départ, votre point d'arrivée et la qu
 import AlgoHeader from "@/components/common/AlgoHeader.vue";
 import glace from "@/assets/svg/icons/Algo/glace.vue";
 import algorithm2 from "@/assets/svg/icons/Algo/algorithm_illustration.vue";
+import forloop from "@/assets/svg/icons/Algo/for_loop.vue";
+import studyon from "@/assets/svg/icons/Algo/study_on.vue";
+import studyoff from "@/assets/svg/icons/Algo/study_off.vue";
+import loop from "@/assets/svg/icons/Algo/loop.vue";
+import Avatar1 from "@/assets/svg/icons/Avatar/Avatar1";
 
 
 
@@ -68,30 +139,231 @@ export default {
     AlgoHeader,
     glace,
     algorithm2,
+    forloop,
+    studyon,
+    studyoff,
+    loop,
+    Avatar1,
+
   },
+  data(){
+    return{
+      questions:[
+        {
+          question:'Dans cette boucle for, les valeurs du compteur vont de 3 à 12 et augmentant de 1',
+          myImage:'q1',
+          suggestions:[
+            {suggestion:'Vrai', correct:true},
+            {suggestion:'Faux'},
+          ]
+        },
+                {
+          question:'Dans cette boucle for, les valeurs du compteur vont de 1 à 15 et augmentant de 2',
+          myImage:'q2',
+          suggestions:[
+            {suggestion:'Vrai',correct:true},
+            {suggestion:'Faux'},
+
+          ]
+        },
+                {
+          question:'Dans cette boucle for, les valeurs du compteur vont de 1 à 18 et augmentant de 3',
+          myImage:'q3',
+          suggestions:[
+            {suggestion:'Vrai'},
+            {suggestion:'Faux',correct:true},
+
+          ]
+        },
+                {
+          question:'Dans cette boucle for, les valeurs du compteur vont de 2 à 10 et augmentant de 1',
+          myImage:'q4',
+          suggestions:[
+            {suggestion:'Vrai'},
+            {suggestion:'Faux',correct:true},
+
+          ]
+        },
+      ],
+
+    a:0,
+    b:1,
+    select:false, 
+    score:0,
+    quiz: true,
+    score_show:false,
+    }
+  },
+  methods:{
+    selectResponse(e){
+
+      this.select = true;
+
+      if(e.correct){
+        this.score++;
+      }
+    },
+    check(status){
+      if(status.correct){
+        return 'correct'
+      }else{
+        return 'incorrect'
+      }
+    },
+    nextQuestion(){
+      if(this.questions.length - 1 == this.a){
+        this.score_show= true;
+        this.quiz = false;
+      }else{
+        this.a++;
+        this.b++;
+        this.select = false;
+      }
+    },
+    skipQuestion(){
+        if(this.questions.length - 1 == this.a){
+          this.score_show =true;
+          this.quiz = false;
+        }else{
+          this.a++;
+          this.b++;
+        }
+    },
+    restartQuiz(){
+      Object.assign(this.$data, this.$options.data()); // reset data
+    }
+
+
+  },
+  
 };
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu:wght@500&display=swap');
 
 
-p{
-    font-family: 'Roboto Mono', monospace;
+.container-app{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.container-quiz{
+  display: flex;
+  width: 60%;
+  height: 85%;
+  position: relative;
+  top: 0;
+  bottom:0;
+  margin: auto;
+  flex-flow: column;
+  text-align: center;
+  border: 1px solid #e7eae0;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0, 19),0 6px 6px rgba(0, 0, 0, 0.23);
+
+}
+.quiz-header{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  border-bottom: Apx solid #e7eae0;
+  justify-content: center;
+  background-color: #e7eae0;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.quiz-main{
+  display:flex;
+  width:100%;
+  height:70;
+  flex-flow: column;
+  margin: auto;
+}
+.quiz-footer{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  border-top: 1px solid #e7eae0;
+  background-color: #e7eae0;
+  border-radius: 0px 0px 10px 10px;
+}
+.box-question{
+  margin-top:20px;
+}
+.box-question p{
+  margin-top: 20px;
+}
+.box-suggestions{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+.box-suggestions ul{
+  display:flex;
+  width:80%;
+  margin: 0;
+  padding: 0;
+  flex-flow: column;
+}
+.box-suggestions ul li{
+  list-style: none;
+  line-height: 2;
+  border: 1px solid #cdd2d2;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.box-suggestions ul li:hover{
+  background-color: #e7eae0;
+}
+.contentBx p{
+    /* font-family: 'Roboto Mono', monospace; */
+    font-size:  1.5rem;
+
+    font-family: 'Bree Serif', serif;
     color: var(--back);
     font-weight: 300;
     text-align: justify;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.endp p{
+  text-align: center;
 }
 .contentBx h2
 {
-  font-size: 2em;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 3.75rem 0;
+  font-size: 3.4375rem;
   font-weight: 500;
   color:var(--back);
   letter-spacing: 2px;
-  text-transform: uppercase;
+  border-top: 1px solid rgb(33,37,41,.2);
+  border-bottom: 1px solid rgb(33,37,41,.2);
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 3.75rem;
 }
 
-.imgBx .content .contentBx
+.imgBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgBox .content .contentBx
 {
   min-height: 400px;
 }
@@ -99,10 +371,70 @@ p{
   position: relative;
   z-index:  1;
   background: var(--white);
-  padding: 70px;
+  padding-top: 50px;
+  padding-left: 30%;
+  padding-right: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.box-button{
+  display: flex;
+  width: 100%;
+
+}
+.box-button button{
+  width: 150px;
+  height: 35px;
+  outline: none;
+  border:0;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: auto;
+  background-color: #a09f9ff5;
+
+}
+.box-suggestions ul li.correct{
+  border: 1px solid rgb(22, 24, 22);
+  background-color: rgb(74, 219, 74);
+  color: white;
+  font-weight: 600;
+}
+.box-suggestions ul li.incorrect{
+  border: 1px solid rgb(240, 117, 100);
+  background-color: rgb(240, 117, 100);
+  color: white;
+  font-weight: 600;
+}
+.box-score{
+  display: flex;
+  width: 100%;
+  height : 70%;
+  flex-flow: column;
+}
+.box-score h3{
+  margin-top:5%;
+}
+.btn-restart{
+  display:flex;
+  width:100%;
+  height: auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btn-restard button {
+   width: 150px;
+   height: 35px;
+   outline: white;
+   border: 0;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: auto;
+  background-color: rgb(106, 128, 202);
 }
 </style>
