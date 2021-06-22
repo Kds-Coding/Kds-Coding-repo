@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="HomeHeader">
     <div class="overlay"></div>
     <img src="../../public/img/home/header.png" class="img-fluid" alt="" />
 
@@ -83,7 +83,7 @@
               <button
                 type="button"
                 id="seeMore"
-                @click="$router.push('/web'), scrollToTop()"
+                @click="$router.push('/web')"
                 style="background-color: #1e6995"
               >
                 En voir plus
@@ -136,14 +136,14 @@ export default {
 </script>
 <style lang="scss">
 /******************* HEADER STYLE************ */
-header {
+#HomeHeader {
   position: relative;
   height: 100vh;
   min-height: 500px;
   width: 100%;
   overflow: hidden;
 }
-header .overlay {
+#HomeHeader .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -153,7 +153,7 @@ header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
-header .welcome {
+#HomeHeader .welcome {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;

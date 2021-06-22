@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import Code from "../../assets/svg/icons/dev web/code.vue";
-import Computer from "../../assets/svg/icons/dev web/computer.vue";
-import Www from "../../assets/svg/icons/dev web/www.vue";
-import Banner from "../../assets/svg/Headers/bannerObj.vue";
+import Code from "@/assets/svg/icons/dev web/code.vue";
+import Computer from "@/assets/svg/icons/dev web/computer.vue";
+import Www from "@/assets/svg/icons/dev web/www.vue";
+import Banner from "@/assets/svg/Headers/bannerObj.vue";
 
 export default {
   components: {

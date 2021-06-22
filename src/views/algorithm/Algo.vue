@@ -61,7 +61,32 @@
             eiusmod tempor incididunt ut labore.
           </p>
         </div>
-        <div class="play"><Play circleColor="#BB4646"></Play></div>
+        <div class="play">
+          <Play
+            circleColor="#BB4646"
+            @click="() => $router.push('/algo/course3')"
+          ></Play>
+        </div>
+      </article>
+
+      <article class="col-lg-10 course">
+        <div class="medal">
+          <SilverMedal width="275.232143" height="275.232143"></SilverMedal>
+        </div>
+        <div class="content">
+          Niveau : Moyen
+          <h1>cours 4</h1>
+          <p>
+            Ce cours va te permettre d'avoir un aperçu d'un des élements les
+            plus important: les boucles !
+          </p>
+        </div>
+        <div class="play">
+          <Play
+            circleColor="#BB4646"
+            @click="() => $router.push('/algo/course4')"
+          ></Play>
+        </div>
       </article>
       <div class="container-fluid text-center" style="margin: 20px">
         <Arrow arrowTransform="rotate(270)" target="AlgoHeader"></Arrow>
@@ -143,7 +168,7 @@ import Banner from "@/assets/svg/Headers/bannerObj.vue";
 import Arrow from "@/assets/svg/icons/buttons/arrow.vue";
 import Play from "@/assets/svg/icons/buttons/play_circle_filled.vue";
 
-export default { 
+export default {
   components: {
     AlgoHeader,
     Discover,
@@ -159,8 +184,4 @@ export default {
 </script>
 
 <style lang="scss">
-#AlgoConteneur .medal,
-#AlgoConteneur .subTitle {
-  background-color: #bb4646;
-}
 </style>

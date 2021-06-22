@@ -85,9 +85,14 @@
         </div>
         <div class="content">
           Niveau : Facile
-          <h1>Exercice 1 :Lorem ipsum dolor sit amet</h1>
+          <h1>Exercice 1 : Remplis les textes à trous</h1>
         </div>
-        <div class="play"><Play circleColor="#4691BD"></Play></div>
+        <div class="play">
+          <Play
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/exercice1')"
+          ></Play>
+        </div>
       </article>
       <article class="col-lg-10 excercise">
         <div class="medal">

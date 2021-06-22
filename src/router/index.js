@@ -6,6 +6,8 @@ import Algo from '@/views/algorithm/Algo.vue'
 import AlgoCourse1 from '@/views/algorithm/AlgoCourse1.vue'
 import AlgoCourse2 from '@/views/algorithm/AlgoCourse2.vue'
 
+import AlgoCourse4 from '@/views/algorithm/AlgoCourse4.vue'
+
 //Web pages
 import Web from '@/views/web_development/Web.vue'
 import WebCourse1 from '@/views/web_development/WebCourse1.vue'
@@ -22,30 +24,34 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component:Home ,
+    component: Home,
   },
-  
+
   {
     path: '/about',
     name: 'About',
     component: About
-    },
-  
-    {
-      path: '/algo',
-      name: 'Algorithme',
-      component: Algo
-      },
-      {
-      path: '/algo/Course1',
-      name: 'Cours 1 - Algo',
-      component: AlgoCourse1
-      },
-      {
-        path: '/algo/Course2',
-        name: 'Cours 2 - Algo',
-        component: AlgoCourse2
-        },
+  },
+
+  {
+    path: '/algo',
+    name: 'Algorithme',
+    component: Algo
+  },
+  {
+    path: '/algo/Course1',
+    name: 'Cours 1 - Algo',
+    component: AlgoCourse1
+  }, {
+    path: '/algo/Course2',
+    name: 'Cours 2 - Les variables',
+    component: AlgoCourse2
+  },
+  {
+    path: '/algo/Course4',
+    name: 'Cours 4 - Les boucles',
+    component: AlgoCourse4
+  },
   {
     path: '/notfound',
     name: 'NotFound',
@@ -55,23 +61,23 @@ const routes = [
     path: '/web',
     name: 'Web',
     component: Web,
-  }, 
+  },
   {
     path: '/web/course1',
     name: 'Course1',
     component: WebCourse1,
   },
-   {
+  {
     path: '/web/course3',
     name: 'Chapitre 3',
     component: WebCourse3,
   },
-  
+
 ]
 
 const router = createRouter({
-   // Fonction wich make a scroll to the top of new page
-   scrollBehavior(to, from, savedPosition) {
+  // Fonction wich make a scroll to the top of new page
+  scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     } else {
@@ -80,10 +86,10 @@ const router = createRouter({
   },
   history: createWebHistory(),
   routes,
- 
-  
- 
- 
+
+
+
+
 })
 
 export default router

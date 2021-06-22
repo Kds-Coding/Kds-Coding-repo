@@ -29,5 +29,9 @@ export default {
 </script>
 
 <style>
+#AlgoConteneur .medal,
+#AlgoConteneur .subTitle {
+  background-color: #bb4646;
+}
 </style>
 

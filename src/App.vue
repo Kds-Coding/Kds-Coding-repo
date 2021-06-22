@@ -2,41 +2,8 @@
 
 <template>
   <div class="wrapper">
-    <Sidebar :class="{ streth: active }"></Sidebar>
-
-    <div id="content" :class="{ streth: active }">
-      <nav
-        class="navbar navbar-expand-lg"
-        id="header"
-        :class="{ streth: active }"
-      >
-        <div class="container-fluid col align-self-start">
-          <button
-            @click="active = !active"
-            :aria-pressed="active ? 'true' : 'false'"
-            type="button"
-            id="moreOpen"
-          >
-            <!-- hop une petite div image-->
-            <img src="../public/img/icons/home.png" alt="" />
-            <p style="margin: auto">Menu</p>
-          </button>
-        </div>
-        <div id="profil" class="container col align-self-end">
-          <img
-            id="profilPic"
-            src="../public/img/icons/me.png"
-            alt=""
-            height="88"
-            width="88"
-          />
-          <div id="infos" class="d-flex flex-column justify-content-start">
-            <p style="margin-bottom: 0px">Max</p>
-            <p style="margin-bottom: 0px">Titre</p>
-            <p style="margin-bottom: 0px">Succes: XiX</p>
-          </div>
-        </div>
-      </nav>
+    <div id="content">
+      <Sidebar></Sidebar>
       <!--  routeur-view permet  d'afficher la view demandé dans le header(routeur-link) -->
       <router-view></router-view>
     </div>
@@ -45,7 +12,7 @@
 
 
 <script>
-import Sidebar from "./components/Menu/Sidebar.vue";
+import Sidebar from "./components/Menu/NavBar.vue";
 
 export default {
   name: "app",
@@ -85,7 +52,7 @@ export default {
 ----------------------------------------------------- */
 
 #content {
-  width: calc(100% - 250px);
+  width: 100%;
   margin: 0;
   min-height: 100vh;
   transition: all 0.3s;
@@ -95,12 +62,6 @@ export default {
   background-color: #e5e5e5;
 }
 
-#content.streth {
-  width: 100%;
-}
-#header.streth {
-  width: 100%;
-}
 #moreOpen {
   display: flex;
   flex-direction: row;
@@ -128,7 +89,7 @@ export default {
 #header {
   position: fixed;
   top: 0;
-  width: 95%;
+  width: 100%;
   z-index: 9999;
 }
 #infos p {
