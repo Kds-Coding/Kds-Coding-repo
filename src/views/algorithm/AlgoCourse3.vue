@@ -9,11 +9,11 @@
  </template>
  
 <script>
-  import AlgoHeader from "@/components/common/AlgoHeader.vue";
+ import AlgoHeader from "@/components/common/AlgoHeader.vue";
   
-  export default {
-    components: {
-      AlgoHeader,
-    },
-  };
+ export default {
+   components: {
+     AlgoHeader,
+   },
+ };
 </script>
