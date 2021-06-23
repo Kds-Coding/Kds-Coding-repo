@@ -1,6 +1,6 @@
 <template>
   <AlgoHeader>
-    <h2 id="HeaderSubTitle">cours 1 - Intro à l'algo !</h2>
+    <h2 id="HeaderSubTitle">Cours 1 - Intro à l'algo !</h2>
     <p class="HeaderTitleText">
       Ce cours va te permettre de savoir à quoi ça sert et en quoi est-ce utile
       l'algorithmie dans la programmation et d'entrer doucement dans la logique
@@ -42,10 +42,10 @@
           <br/>
           Et bien voilà à quoi ça ressemble :
       </p>
-      <!--<img src="..\..\assets\svg\icons\Algo.PNG"> -->
       </div>
-      <div id="Algopseudo">
-       <!--<img src="@/assets/Algo.svg" alt=""  /> -->
+      <div id="Algopseudo" class="img">
+      <img src="@/assets/Algo.svg" alt="" witdh= "240" height="320"/>
+      <br>
       </div>
        <div class="third">
          <p>
@@ -111,5 +111,10 @@ export default {
 
 p{
     font-family: 'Roboto Mono', monospace;
+}
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
