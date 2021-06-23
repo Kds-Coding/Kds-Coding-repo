@@ -125,8 +125,7 @@
       <div class="endp">
         <p>
           <br />Tu as beaucoup appris bravo! Tu as beaucoup de potentiel 😎 Au
-          prochain cours, tu apprendras à modifier l’apparence des éléments à ta
-          guise, à très vite!<br />🖥❤️⌨️
+          prochain cours, tu apprendras à utliser des fonctions, à très vite!<br />🖥❤️⌨️
         </p>
       </div>
       <div id="BouttonContainer"></div>
@@ -166,8 +165,14 @@
                 <h3>Question {{ b }}/{{ questions.length }}</h3>
                 <p>{{ element.question }}</p>
                 <div>
-                  <img :src="`../../../public/img/exercises/${nImage}.png`" />
+                  <img :src="require(`../../../public/img/exercises/${element.myImage}`)" />
                 </div>
+                
+<!--                 <div  >
+                    <img :src="element.myImage1">
+                </div> -->
+
+                
               </div>
               <div class="box-suggestions">
                 <ul>
@@ -187,7 +192,7 @@
               <h3>{{ score }}/{{ questions.length }}</h3>
               <div class="btn-restard">
                 <button @click="restartQuiz">
-                  Recommencer <i class="fas fa-sync-alt"></i>
+                  Recommencer 
                 </button>
               </div>
             </div>
@@ -228,13 +233,15 @@ export default {
     loop,
     Avatar1,
   },
+  
+
   data() {
     return {
       questions: [
         {
           question:
             "Dans cette boucle for, les valeurs du compteur vont de 3 à 12 et augmentant de 1",
-          myImage: "q1",
+          myImage: "q1.png",
           suggestions: [
             { suggestion: "Vrai", correct: true },
             { suggestion: "Faux" },
@@ -243,7 +250,7 @@ export default {
         {
           question:
             "Dans cette boucle for, les valeurs du compteur vont de 1 à 15 et augmentant de 2",
-          myImage: "q2",
+          myImage: "q2.png",
           suggestions: [
             { suggestion: "Vrai", correct: true },
             { suggestion: "Faux" },
@@ -252,7 +259,7 @@ export default {
         {
           question:
             "Dans cette boucle for, les valeurs du compteur vont de 1 à 18 et augmentant de 3",
-          myImage: "q3",
+          myImage: "q3.png",
           suggestions: [
             { suggestion: "Vrai" },
             { suggestion: "Faux", correct: true },
@@ -261,7 +268,7 @@ export default {
         {
           question:
             "Dans cette boucle for, les valeurs du compteur vont de 2 à 10 et augmentant de 1",
-          myImage: "q4",
+          myImage: "q4.png",
           suggestions: [
             { suggestion: "Vrai" },
             { suggestion: "Faux", correct: true },
@@ -269,14 +276,15 @@ export default {
         },
       ],
 
-      a: 0,
-      b: 1,
+      a:0,
+      b:1,
       select: false,
       score: 0,
       quiz: true,
       score_show: false,
     };
   },
+  
   methods: {
     selectResponse(e) {
       this.select = true;
@@ -331,7 +339,7 @@ export default {
 }
 .container-quiz {
   display: flex;
-  width: 60%;
+  width: 65%;
   height: 85%;
   position: relative;
   top: 0;
@@ -339,18 +347,18 @@ export default {
   margin: auto;
   flex-flow: column;
   text-align: center;
-  border: 1px solid #e7eae0;
+  border: 1px solid #BB4646;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .quiz-header {
   display: flex;
   width: 100%;
   height: 20%;
-  border-bottom: Apx solid #e7eae0;
+  padding: 1%;
+  border-bottom: 1px solid #BB4646;
   justify-content: center;
-  background-color: #e7eae0;
+  background-color: #BB4646;
   align-items: center;
   border-radius: 10px 10px 0px 0px;
 }
@@ -360,15 +368,17 @@ export default {
   height: 70;
   flex-flow: column;
   margin: auto;
+  padding: 3% 5% 1% 5%;
 }
 .quiz-footer {
   display: flex;
   width: 100%;
   height: 10%;
   justify-content: center;
-  border-top: 1px solid #e7eae0;
-  background-color: #e7eae0;
+  border-top: 1px solid #BB4646;
+  background-color: #BB4646;
   border-radius: 0px 0px 10px 10px;
+  padding: 2%;
 }
 .box-question {
   margin-top: 20px;
@@ -388,11 +398,13 @@ export default {
   margin: 0;
   padding: 0;
   flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 .box-suggestions ul li {
   list-style: none;
   line-height: 2;
-  border: 1px solid #cdd2d2;
+  border: 1px solid #849494;
   margin-bottom: 20px;
   border-radius: 15px;
   cursor: pointer;
@@ -468,7 +480,7 @@ export default {
   cursor: pointer;
   border-radius: 15px;
   margin: auto;
-  background-color: #a09f9ff5;
+  background-color: #A12C2C;
 }
 .box-suggestions ul li.correct {
   border: 1px solid rgb(22, 24, 22);
@@ -487,6 +499,7 @@ export default {
   width: 100%;
   height: 70%;
   flex-flow: column;
+  padding-bottom: 5%;
 }
 .box-score h3 {
   margin-top: 5%;
@@ -509,5 +522,8 @@ export default {
   border-radius: 15px;
   margin: auto;
   background-color: rgb(106, 128, 202);
+}
+.quiz-header h1{
+   color: white;
 }
 </style>
