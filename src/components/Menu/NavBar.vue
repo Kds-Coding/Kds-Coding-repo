@@ -97,10 +97,10 @@
           >
           <ul class="collapse list-unstyled subMenu" id="ConnectSubMenu">
             <li>
-              <router-link to="/algo/course1">Connexion</router-link>
+              <router-link to="/Login">Connexion</router-link>
             </li>
             <li>
-              <router-link class="" to="/algo/course2">Inscription</router-link>
+              <router-link class="" to="/Register">Inscription</router-link>
             </li>
           </ul>
         </li>

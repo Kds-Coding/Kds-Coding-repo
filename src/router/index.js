@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
 
+import Login from '@/views/Login.vue'
+import Register from '@/views/Register.vue'
+
 //Algorithm pages
 import Algo from '@/views/algorithm/Algo.vue'
 import AlgoCourse1 from '@/views/algorithm/AlgoCourse1.vue'
@@ -31,6 +34,18 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+
+  {
+    path: '/register',
+    name: 'register',
+    component: Register
   },
 
   {
