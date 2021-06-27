@@ -67,6 +67,10 @@
                   Recommencer 
                 </button>
               </div>
+                <div class="container my-5">
+    <modale :revele="revele" :toggleModale="toggleModale"></modale>
+    
+  </div>
             </div>
             <div class="quiz-footer">
               <div class="box-button">
@@ -86,16 +90,17 @@
 
 <script>
 import AlgoHeader from "@/components/common/AlgoHeader.vue";
+import Modale from "@/components/common/Modale.vue";
 
 export default {
+  name: "Contenu",
   components: {
     AlgoHeader,
-
+    Modale,
   },
-  
-
   data() {
     return {
+      revele: false,
       questions: [
         {
           question:
@@ -141,10 +146,15 @@ export default {
       score: 0,
       quiz: true,
       score_show: false,
+      succes: 0,
     };
   },
-  
+
   methods: {
+
+    toggleModale: function() {
+      this.revele = !this.revele;
+    },
     selectResponse(e) {
       this.select = true;
 
@@ -159,10 +169,16 @@ export default {
         return "incorrect";
       }
     },
+
     nextQuestion() {
       if (this.questions.length - 1 == this.a) {
         this.score_show = true;
         this.quiz = false;
+
+      if (this.score==4) {
+        this.revele = true;
+      }
+
       } else {
         this.a++;
         this.b++;
