@@ -140,8 +140,8 @@
       width="100%"
       
     >
-      <div class="centerLinkB">
-        <h1 class="footerLink">Quiz sur les boucles for</h1>
+      <div class="centerLink">
+        <h1 class="footerLink">Quiz sur la boucle for</h1>
         <Arrow
           arrowTransform="rotate(90)"
         @click="() => $router.push('/algo/QuizAlgo')"
