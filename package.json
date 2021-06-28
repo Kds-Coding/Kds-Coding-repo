@@ -15,8 +15,10 @@
     "firebase": "^8.6.2",
     "gsap": "^3.6.1",
     "portal-vue": "^2.1.7",
+    "vee-validate": "^3.4.10",
     "vue": "^3.0.11",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^4.0.0-0",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

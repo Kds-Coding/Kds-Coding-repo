@@ -1,82 +1,86 @@
 <template>
+  <RegisterComponent>
+    <!-- Icon -->
+    <template v-slot:header>
+      <h1>On va t'inscrire</h1>
+    </template>
 
-<div class="wrapper fadeInDown">
-        <div id="formContent">
-            <!-- Tabs Titles -->
+    <template v-slot:body>
+      <div class="iconUser">
+        <Avatar1></Avatar1>
+      </div>
 
-            <!-- Icon -->
-            <div class="iconUser">
-            <Avatar1></Avatar1>
-            </div>
+      <!-- Login Form -->
+      <form @submit.prevent="onFormSubmit">
+        <label for="">Ton pseudo</label>
 
-            <!-- Login Form -->
-            <form>
-            <input type="text" id="register" name="register" placeholder="Mon pseudo">
-            <input type="text" id="password" name="register" placeholder="Mon code">
-            <input type="submit" value="Inscription">
-            </form>
+        <input
+          type="text"
+          id="register"
+          name="register"
+          placeholder="Mon pseudo"
+          v-model="user.userName"
+        />
+        <label for="">Ton mot de passe</label>
+        <input
+          type="password"
+          id="password"
+          name="register"
+          placeholder="1234"
+          maxlength="4"
+          required
+          v-model="user.password"
+        />
 
-            <!-- Remind Passowrd -->
-            <div id="formFooter">
-            <a class="underlineHover" href="#">Déjà inscrit?</a>
-            </div>
-
-        </div>
-        </div>
+        <input type="submit" value="Suivant" />
+      </form>
+    </template>
+    <template v-slot:footer>
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Déjà inscrit?</a>
+      </div></template
+    >
+    <!-- Remind Passowrd -->
+  </RegisterComponent>
 </template>
 
 <script>
-
+import RegisterComponent from "@/components/common/LoginComponent.vue";
 import Avatar1 from "@/assets/svg/icons/Avatar/Avatar1";
-
+import { db } from "../firebaseDb";
 
 export default {
   components: {
+    RegisterComponent,
     Avatar1,
-
+  },
+  data() {
+    return {
+      user: {},
+    };
+  },
+  methods: {
+    onFormSubmit(event) {
+      event.preventDefault();
+      db.collection("users")
+        .add(this.user)
+        .then(() => {
+          alert("Bienvenue ! " + this.user.userName);
+          this.user.userName = "";
+          this.user.password = "";
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 };
 </script>
 
-<style lang="scss" scoped>
-
-/* STRUCTURE */
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column; 
-  justify-content: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 20px;
-}
-
-#formContent {
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
-  background: #fff;
-  padding: 30px;
-  width: 90%;
-  max-width: 450px;
-  position: relative;
-  padding: 0px;
-  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-  text-align: center;
-}
-
-#formFooter {
-  background-color: #f6f6f6;
-  border-top: 1px solid #dce8f1;
-  padding: 25px;
-  text-align: center;
-  -webkit-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
-}
-
+<style>
 /* TYPOGRAPHY*/
 
-input[type=submit] {
+.auth-body input[type="submit"] {
   background-color: #ffd67e;
   border: none;
   color: white;
@@ -90,11 +94,12 @@ input[type=submit] {
   margin: 5px 20px 40px 20px;
 }
 
-input[type=submit]:hover  {
-  background-color: #FFC54B;
+.auth-body input[type="submit"]:hover {
+  background-color: #ffc54b;
 }
 
-input[type=text] {
+.auth-body input[type="text"],
+input[type="password"] {
   background-color: #f6f6f6;
   color: #0d0d0d;
   padding: 15px 32px;
@@ -106,10 +111,11 @@ input[type=text] {
   width: 85%;
   border: 2px solid #f6f6f6;
   border-radius: 5px 5px 5px 5px;
-  outline-color: #FFC54B;
+  outline-color: #ffc54b;
 }
+
 *:focus {
-    outline-color: #FFC54B;
+  outline-color: #ffc54b;
 }
 
 /* ANIMATIONS */
@@ -117,5 +123,4 @@ input[type=text] {
 .underlineHover:hover {
   color: #0d0d0d;
 }
-
 </style>

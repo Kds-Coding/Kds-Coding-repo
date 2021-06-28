@@ -3,7 +3,7 @@
     <svg
       :width="width"
       :height="height"
-      viewBox="0 0 1900 786"
+      :viewBox="viewBox"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -40,6 +40,9 @@ export default {
     pathColor: {
       type: String,
       default: "currentColor",
+    },
+    viewBox: {
+      default: "0 0 1900 786",
     },
   },
 };

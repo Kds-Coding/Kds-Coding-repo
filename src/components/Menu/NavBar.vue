@@ -24,10 +24,13 @@
             role="button"
             aria-expanded="false"
             aria-controls="AlgoSubMenu"
-            class="dropdown-toggle"
+            class=""
             >Algorithmie
           </a>
           <ul class="collapse list-unstyled subMenu" id="AlgoSubMenu">
+            <li>
+              <router-link class="" to="/algo">Tous les cours</router-link>
+            </li>
             <li>
               <router-link to="/algo/course1">Introduction</router-link>
             </li>
@@ -35,10 +38,6 @@
               <router-link class="" to="/algo/course2"
                 >Les variables</router-link
               >
-            </li>
-
-            <li>
-              <router-link class="" to="/algo">Plus de cours !</router-link>
             </li>
           </ul>
         </li>
@@ -48,10 +47,13 @@
             href="#DevWebSubMenu"
             data-toggle="collapse"
             aria-expanded="false"
-            class="dropdown-toggle"
+            class=""
             >Développement web</a
           >
           <ul class="collapse list-unstyled subMenu" id="DevWebSubMenu">
+            <li>
+              <router-link class="" to="/web">Tous les cours</router-link>
+            </li>
             <li>
               <router-link to="/web/course1">Introduction</router-link>
             </li>
@@ -59,9 +61,6 @@
               <router-link class="" to="/web/course2"
                 >Arts plastiques !</router-link
               >
-            </li>
-            <li>
-              <router-link class="" to="/web/course3">La toile !</router-link>
             </li>
           </ul>
         </li>
@@ -71,18 +70,18 @@
             href="#DevObjSubMenu"
             data-toggle="collapse"
             aria-expanded="false"
-            class="dropdown-toggle"
+            class=""
             >Dév Objet</a
           >
           <ul class="collapse list-unstyled subMenu" id="DevObjSubMenu">
             <li>
-              <router-link to="/objet/course1">Introduction</router-link>
+              <router-link class="" to="/obj/course3">Les cours</router-link>
             </li>
             <li>
-              <router-link class="" to="/objet/course2">course2</router-link>
+              <router-link to="/obj/course1">Introduction</router-link>
             </li>
             <li>
-              <router-link class="" to="/objet/course1">course2</router-link>
+              <router-link class="" to="/obj/course2">course2</router-link>
             </li>
           </ul>
         </li>
@@ -92,7 +91,7 @@
             href="#ConnectSubMenu"
             data-toggle="collapse"
             aria-expanded="false"
-            class="dropdown-toggle"
+            class=""
             >Connecte toi !</a
           >
           <ul class="collapse list-unstyled subMenu" id="ConnectSubMenu">

@@ -19,6 +19,10 @@ export default {
       e.dataTransfer.dropEffect = "move";
       e.dataTransfer.effectAllowed = "move";
       e.dataTransfer.setData("idCard", target.id);
+
+      setTimeout(() => {
+        target.style.display = "none";
+      }, 0);
     },
   },
 };
