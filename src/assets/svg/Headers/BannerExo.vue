@@ -1,18 +1,14 @@
 <template>
   <div style="position: relative">
-   <svg 
-    width="1670"
-    height="234"
-   viewBox="0 0 1900 260" 
-   fill="none" 
-   xmlns="http://www.w3.org/2000/svg">
-
-    <rect width="1900" height="270" fill="#BB4646"/>
-    <path 
-        d="M1060 0H1440V365.595C1440 365.595 1436.47 397.412 1422.8 279.403C1409.12 161.394 1327.46 179.327 1301.06 223.869C1274.65 268.412 1191.98 224.448 1203.58 148.668C1227.39 -6.94168 1124.33 2.89237 1060 0Z" 
-        fill="#A12C2C"
-    />
-</svg>
+    <svg
+      :width="width"
+      :height="height"
+      viewBox="0 0 3800 786"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="3800" height="786" :fill="rectColor" />
+    </svg>
     <slot></slot>
   </div>
 </template>
@@ -24,12 +20,16 @@ export default {
       type: String,
       default: "box",
     },
+    width: {
+      type: [Number, String],
+      default: 3800.232143,
+    },
+    height: {
+      type: [Number, String],
+      default: 786.232143,
+    },
 
     rectColor: {
-      type: String,
-      default: "currentColor",
-    },
-    pathColor: {
       type: String,
       default: "currentColor",
     },

@@ -134,10 +134,10 @@
   </div>
   <Footer>
     <Banner
-      rectColor="#46BB6E"
-      pathColor="#178C3F"
+      rectColor="#BB4646"
       height="100%"
       width="100%"
+      class="col-12"
       
     >
       <div class="centerLink">
