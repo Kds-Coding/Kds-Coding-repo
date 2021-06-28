@@ -10,6 +10,8 @@ import Algo from '@/views/algorithm/Algo.vue'
 import AlgoCourse1 from '@/views/algorithm/AlgoCourse1.vue'
 import AlgoCourse2 from '@/views/algorithm/AlgoCourse2.vue'
 
+import Algo4Exo from '@/views/algorithm/Algo4Exo.vue'
+
 import AlgoCourse4 from '@/views/algorithm/AlgoCourse4.vue'
 
 //Web pages
@@ -71,6 +73,12 @@ const routes = [
     path: '/algo/Course4',
     name: 'Cours 4 - Les boucles',
     component: AlgoCourse4
+  },
+
+  {
+    path: '/algo/QuizAlgo',
+    name: 'Quiz - Les boucles',
+    component: Algo4Exo
   },
   {
     path: '/:catchAll(.*)',

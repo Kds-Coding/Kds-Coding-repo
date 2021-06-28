@@ -59,7 +59,7 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #e5e5e5;
+  background-color: #F5F6FA;
 }
 
 #moreOpen {

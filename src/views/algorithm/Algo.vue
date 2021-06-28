@@ -105,9 +105,13 @@
         </div>
         <div class="content">
           Niveau : Facile
-          <h1>Exercice 1 :Lorem ipsum dolor sit amet</h1>
+          <h1>Exercice 1 : Quiz - les boucles for</h1>
         </div>
-        <div class="play"><Play circleColor="#BB4646"></Play></div>
+        <div class="play">
+          <Play 
+            circleColor="#BB4646"
+            @click="() => $router.push('/algo/QuizAlgo')">
+          </Play></div>
       </article>
       <article class="col-lg-10 excercise">
         <div class="medal">
@@ -150,7 +154,8 @@
         <h1 class="footerLink">DEVELOPPEMENT WEB</h1>
         <Arrow
           arrowTransform="rotate(0)"
-          @click="() => $router.push('/web')"
+          @click="() => $router.push('/web') "
+          
         ></Arrow>
       </div>
     </Banner>
