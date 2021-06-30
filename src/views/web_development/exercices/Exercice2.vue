@@ -7,9 +7,13 @@
         <span>Je suis un span!</span>
       </div>
     </div>
-    <TextaTrous :answers="items" :rightAnswers="goodItems">
+    <TextaTrous
+      :answers="items"
+      :rightAnswers="goodItems"
+      identifier="Question2"
+    >
       <template v-slot:TextContainer>
-        <div class="CodeStructure container codeContainer" id="textFill">
+        <div class="CodeStructure container codeContainer" id="Question2">
           <span>div {</span>
           <div style="margin-left: 60px" class="lineStructure">
             <span>padding-right:</span>

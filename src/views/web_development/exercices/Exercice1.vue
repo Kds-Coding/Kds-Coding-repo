@@ -8,9 +8,13 @@
         - <b>Donkey Kong</b>
       </div>
     </div>
-    <TextaTrous :answers="items" :rightAnswers="goodItems">
+    <TextaTrous
+      :answers="items1"
+      :rightAnswers="goodItems"
+      identifier="Question1"
+    >
       <template v-slot:TextContainer>
-        <div class="CodeStructure container codeContainer" id="textFill">
+        <div class="CodeStructure container codeContainer" id="Question1">
           <span>&#60;html&#62;</span>
           <span style="margin-left: 30px">&#60;body&#62;</span>
           <Board id="board-1" class="answer" style="margin-left: 55px"> </Board>
