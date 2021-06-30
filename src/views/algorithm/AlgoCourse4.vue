@@ -1,6 +1,6 @@
 <template>
   <AlgoHeader>
-    <h2 id="HeaderSubTitle">cours 4 - Les boucles !</h2>
+    <h2 id="HeaderSubTitle">Cours 4 - Les boucles !</h2>
     <p class="HeaderTitleText">
       Comprendre les différentes boucles et différences entre elles
     </p>
