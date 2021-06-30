@@ -11,15 +11,15 @@
       </div>
 
       <!-- Login Form -->
-      <form @submit.prevent="onFormSubmit">
-        <label for="">Ton pseudo</label>
+      <form @submit.prevent="userLogin">
+        <label for="">Ton mail</label>
 
         <input
           type="text"
           id="register"
           name="register"
           placeholder="Mon pseudo"
-          v-model="user.userName"
+          v-model="user.email"
         />
         <label for="">Ton mot de passe</label>
         <input
@@ -27,7 +27,7 @@
           id="password"
           name="register"
           placeholder="1234"
-          maxlength="4"
+          maxlength="7"
           required
           v-model="user.password"
         />
@@ -44,6 +44,7 @@
 <script>
 import RegisterComponent from "@/components/common/LoginComponent.vue";
 import Avatar1 from "@/assets/svg/icons/Avatar/Avatar1";
+import { auth } from "../firebaseDb";
 
 export default {
   components: {
@@ -52,12 +53,22 @@ export default {
   },
   data() {
     return {
-      user: {},
+      user: {
+        email: "",
+        password: "",
+      },
     };
   },
   methods: {
-    onFormSubmit(event) {
-      event.preventDefault();
+    userLogin() {
+      auth
+        .signInWithEmailAndPassword(this.user.email, this.user.password)
+        .then(() => {
+          this.$router.push("/");
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
     },
   },
 };

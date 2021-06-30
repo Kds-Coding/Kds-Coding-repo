@@ -75,14 +75,9 @@ export default {
           title: "Item-3",
           value: "red",
           list: 1,
-        }
+        },
       ],
-      goodItems: [
-        "20",
-        "red",
-        "10",
-        "green"
-      ],
+      goodItems: ["20", "red", "10", "green"],
     };
   },
 };
@@ -99,7 +94,7 @@ export default {
 }
 
 #box {
-  color: #F9F9F9;
+  color: #f9f9f9;
   padding: 10px;
   border: 3px dashed #aaaaaa;
   border-radius: 12px;

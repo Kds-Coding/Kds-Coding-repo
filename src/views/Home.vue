@@ -71,6 +71,7 @@
               class="card-img-top"
               src="../../public/img/home/DevWeb.png"
               alt="Card image cap"
+              height="500px"
             />
             <div class="card-body">
               <h1 class="text-center" style="color: #1e6995">

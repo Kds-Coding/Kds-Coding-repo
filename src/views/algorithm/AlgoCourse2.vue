@@ -15,7 +15,7 @@
       sur lesquels agit l'algorithme et de les associer à un nom. Pour faire plus
       simple, on peut considérer une variable comme un conteneur dans lequel 
       serait stocké l'élément. <br><br>
-      Exemple : <br> <br>
+      Exemple : <br><br>
     </p>
   </div>
 </template>

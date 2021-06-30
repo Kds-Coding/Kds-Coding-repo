@@ -141,7 +141,7 @@ const routes = [
   },
   {
     path: '/obj/course3',
-    name: 'Exercice 2 ',
+    name: 'Exercice 3 ',
     component: WorkInProgress,
   }
 ]

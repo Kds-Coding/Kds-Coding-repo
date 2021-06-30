@@ -20,17 +20,17 @@
             <Board id="board-3" class="answer"> </Board>
           </div>
           <div style="margin-left: 60px" class="lineStructure">
-              "J'adore les
+            "J'adore les
             <Board id="board-4" class="answer"> </Board>
-              bananes
+            bananes
             <Board id="board-5" class="answer"> </Board>
-              !"
+            !"
             <Board id="board-6" class="answer"> </Board>
           </div>
           <div style="margin-left: 60px" class="lineStructure">
-              -
+            -
             <Board id="board-7" class="answer"> </Board>
-              Donkey Kong
+            Donkey Kong
             <Board id="board-8" class="answer"> </Board>
           </div>
           <Board style="margin-left: 55px" id="board-9" class="answer"> </Board>
@@ -53,7 +53,7 @@ export default {
   },
   data() {
     return {
-      items: [
+      items1: [
         {
           id: 0,
           title: "Item-0",
@@ -120,6 +120,7 @@ export default {
         "</b>",
         "</div>",
       ],
+      goodItems1: ["<head>", "<title>", "</title>", "</head>"],
     };
   },
 };
