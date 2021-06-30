@@ -9,13 +9,13 @@
   </AlgoHeader>
   
   <div class="MainContent">
-    <h3>Qu'est-ce qu-une variable<h3>
+    <h3>Qu'est-ce qu'une variable</h3>
     <p>
       Une variable est un symbole dont le rôle est de stocker les divers éléments
       sur lesquels agit l'algorithme et de les associer à un nom. Pour faire plus
       simple, on peut considérer une variable comme un conteneur dans lequel 
-      serait stocké l'élément. <br></br>
-      Exemple : <br></br>
+      serait stocké l'élément. <br><br>
+      Exemple : <br> <br>
     </p>
   </div>
 </template>

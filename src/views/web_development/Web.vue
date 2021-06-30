@@ -12,13 +12,13 @@
       </div>
       <article class="col-lg-10 course">
         <div class="medal">
-          <GoldMedal width="275.232143" height="275.232143"></GoldMedal>
+          <BronzeMedal width="275.232143" height="275.232143"></BronzeMedal>
         </div>
         <div class="content">
           Niveau : Facile
           <h1>CHAPITRE 1</h1>
           <p>
-            Découverte des fondements d'une page web
+             Ce cours va te permettre de découvrir les fondements d'une page web.
           </p>
         </div>
         <div class="play">
@@ -30,13 +30,13 @@
       </article>
       <article class="col-lg-10 course">
         <div class="medal">
-          <GoldMedal width="275.232143" height="275.232143"></GoldMedal>
+          <BronzeMedal width="275.232143" height="275.232143"></BronzeMedal>
         </div>
         <div class="content">
           Niveau : Facile
           <h1>CHAPITRE 2</h1>
           <p>
-            Comment personnaliser une page web
+            Ce cours va te permettre de découvrir la personnalisation d'une page web.
           </p>
         </div>
         <div class="play">
@@ -48,15 +48,14 @@
       </article>
       <article class="col-lg-10 course">
         <div class="medal">
-          <SilverMedal width="275.232143" height="275.232143"></SilverMedal>
+          <BronzeMedal width="275.232143" height="275.232143"></BronzeMedal>
         </div>
         <div class="content">
           Niveau : Facile
           <h1>CHAPITRE 3</h1>
           <p>
-            Nous apprendrons comment écrire la structure de notre site avec
-            HTML. Cette structure va nous permettre d'accueillir le contenu du
-            site.
+            Ce cours va te permettre d'écrire la structure de notre site avec HTML.
+            Cette structure va nous permettre d'accueillir le contenu du site.
           </p>
         </div>
         <div class="play">
@@ -79,7 +78,7 @@
       </div>
       <article class="col-lg-10 excercise">
         <div class="medal">
-          <GoldMedal width="125.232143" height="125.232143"></GoldMedal>
+          <BronzeMedal width="125.232143" height="125.232143"></BronzeMedal>
         </div>
         <div class="content">
           Niveau : Facile
@@ -94,7 +93,7 @@
       </article>
       <article class="col-lg-10 excercise">
         <div class="medal">
-          <GoldMedal width="125.232143" height="125.232143"></GoldMedal>
+          <BronzeMedal width="125.232143" height="125.232143"></BronzeMedal>
         </div>
         <div class="content">
           Niveau : Facile
@@ -164,8 +163,9 @@
 import WebHeader from "@/components/common/WebHeader.vue";
 import Discover from "@/components/common/Discover.vue";
 import Footer from "@/components/common/Footer.vue";
-import GoldMedal from "@/assets/svg/icons/medal/gold-medal";
+//import GoldMedal from "@/assets/svg/icons/medal/gold-medal";
 import SilverMedal from "@/assets/svg/icons/medal/silver-medal";
+import BronzeMedal from "@/assets/svg/icons/medal/bronze-medal";
 import Avatar1 from "@/assets/svg/icons/Avatar/Avatar1";
 import Banner from "@/assets/svg/Headers/bannerObj.vue";
 import Arrow from "@/assets/svg/icons/buttons/arrow.vue";
@@ -175,8 +175,9 @@ export default {
   components: {
     WebHeader,
     Discover,
-    GoldMedal,
+   // GoldMedal,
     SilverMedal,
+    BronzeMedal,
     Avatar1,
     Banner,
     Footer,

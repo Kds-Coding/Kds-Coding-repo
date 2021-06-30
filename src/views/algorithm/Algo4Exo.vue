@@ -104,7 +104,7 @@ export default {
       questions: [
         {
           question:
-            "Dans cette boucle for, les valeurs du compteur vont de 3 à 12 et augmentant de 1",
+            "Dans cette boucle for, les valeurs du compteur vont de 3 à 12 et augmentent de 1",
           myImage: "q1.png",
           suggestions: [
             { suggestion: "Vrai", correct: true },
@@ -113,7 +113,7 @@ export default {
         },
         {
           question:
-            "Dans cette boucle for, les valeurs du compteur vont de 1 à 15 et augmentant de 2",
+            "Dans cette boucle for, les valeurs du compteur vont de 1 à 15 et augmentent de 2",
           myImage: "q2.png",
           suggestions: [
             { suggestion: "Vrai", correct: true },
@@ -122,7 +122,7 @@ export default {
         },
         {
           question:
-            "Dans cette boucle for, les valeurs du compteur vont de 1 à 18 et augmentant de 3",
+            "Dans cette boucle for, les valeurs du compteur vont de 1 à 18 et augmentent de 3",
           myImage: "q3.png",
           suggestions: [
             { suggestion: "Vrai" },
@@ -131,7 +131,7 @@ export default {
         },
         {
           question:
-            "Dans cette boucle for, les valeurs du compteur vont de 2 à 10 et augmentant de 1",
+            "Dans cette boucle for, les valeurs du compteur vont de 2 à 10 et augmentent de 1",
           myImage: "q4.png",
           suggestions: [
             { suggestion: "Vrai" },
