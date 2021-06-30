@@ -40,8 +40,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  height: 70%;
+  width: 85%;
+  height: 90%;
   transform: translate(-50%, -50%);
 }
 

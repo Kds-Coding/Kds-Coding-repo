@@ -20,9 +20,7 @@
     <!--<Arrow arrowTransform="rotate(270)" target="HeaderSubTitle"></Arrow>-->
   </div>
 
-  <button type="button" class="btn" @click="showModal">Open Modal!</button>
-
-  <Modal v-show="isModalVisible" @close="closeModal">
+  <Modal v-show="isModalVisible">
     <template v-slot:header> </template>
     <template v-slot:body>
       <p>
@@ -33,7 +31,13 @@
       </p>
     </template>
     <template v-slot:footer>
-      <button @click="closeModal" class="correction">Recommencer</button>
+      <button @click="validateExercice" class="correction" v-if="solved">
+        Valider
+      </button>
+
+      <button @click="resetExercise" class="correction" v-else>
+        Recommencer
+      </button>
     </template>
   </Modal>
 </template>
@@ -42,15 +46,31 @@
 import Card from "@/components/exercices/Card.vue";
 import Panel from "@/components/exercices/Panel.vue";
 import Modal from "@/components/common/ModalWindow.vue";
+import { auth, db } from "../../firebaseDb";
+
 export default {
   components: {
     Card,
     Panel,
     Modal,
   },
+  created() {
+    /*
+    default login : lurius.tharn@gmail.com
+    fitzChi
+    */
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        this.user = user;
+      } else {
+        this.user = null;
+      }
+    });
+  },
   props: {
     answers: Object,
     rightAnswers: Object,
+    identifier: String,
   },
   computed: {
     listOne() {
@@ -63,12 +83,14 @@ export default {
   data() {
     return {
       isModalVisible: false,
+      solved: false,
+      user: null,
     };
   },
 
   methods: {
     check() {
-      const text = document.getElementById("textFill");
+      const text = document.getElementById(this.$props.identifier);
       const boards = text.getElementsByClassName("answer");
       var size = boards.length - 1;
       for (var i = 0; i < size; i++) {
@@ -85,13 +107,15 @@ export default {
         const modalBox = document.getElementById("Modal");
         const modalHeader = document.getElementById("modalTitle");
         modalHeader.innerHTML = "";
-        const text = document.getElementById("textFill");
+        const text = document.getElementById(this.$props.identifier);
         const modalBody = document.getElementById("modalDescription");
         modalBox.style.display = "block";
 
         //const modalFooter = document.getElementById("modalFooter");
 
         modalBody.classList.add("CodeStructure");
+        modalBody.classList.add("codeContainer");
+
         modalBody.innerHTML = text.innerHTML;
         const listAnswer = text.getElementsByClassName("answer");
         const trueList = this.$props.rightAnswers;
@@ -128,6 +152,7 @@ export default {
           texth2 = document.createTextNode(
             "Bravo ! tu as compris toutes les bases"
           );
+          this.solved = true;
         }
 
         h2.appendChild(texth2);
@@ -142,9 +167,23 @@ export default {
         alert("Tu dois remplir toutes les cases !");
       }
     },
-    closeModal() {
+    resetExercise() {
       this.isModalVisible = false;
       document.location.reload();
+    },
+    validateExercice() {
+      db.collection("users")
+        .doc("akSKA8I3p6QtnRYrUQgD")
+        .update({ score: 15 })
+        .then(() => {
+          this.$router.push("./");
+
+          console.log("user updated!");
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+      this.isModalVisible = false;
     },
   },
 };

@@ -11,7 +11,7 @@
       </div>
 
       <!-- Login Form -->
-      <form @submit.prevent="onFormSubmit">
+      <form @submit.prevent="userRegistration">
         <label for="">Ton pseudo</label>
 
         <input
@@ -21,13 +21,22 @@
           placeholder="Mon pseudo"
           v-model="user.userName"
         />
+        <label for="">Ton email</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Mon email"
+          v-model="user.email"
+        />
         <label for="">Ton mot de passe</label>
         <input
           type="password"
           id="password"
           name="register"
           placeholder="1234"
-          maxlength="4"
+          maxlength="7"
           required
           v-model="user.password"
         />
@@ -47,8 +56,7 @@
 <script>
 import RegisterComponent from "@/components/common/LoginComponent.vue";
 import Avatar1 from "@/assets/svg/icons/Avatar/Avatar1";
-import { db } from "../firebaseDb";
-
+import { auth, db } from "../firebaseDb";
 export default {
   components: {
     RegisterComponent,
@@ -56,21 +64,36 @@ export default {
   },
   data() {
     return {
-      user: {},
+      user: {
+        userName: "",
+        email: "",
+        password: "",
+        score: 0,
+      },
     };
   },
   methods: {
-    onFormSubmit(event) {
-      event.preventDefault();
-      db.collection("users")
-        .add(this.user)
-        .then(() => {
-          alert("Bienvenue ! " + this.user.userName);
-          this.user.userName = "";
-          this.user.password = "";
+    userRegistration() {
+      auth
+
+        .createUserWithEmailAndPassword(this.user.email, this.user.password)
+        .then((res) => {
+          db.collection("users")
+            .add(this.user)
+            .then(() => {})
+            .catch((error) => {
+              console.log(error);
+            });
+          res.user
+            .updateProfile({
+              displayName: this.user.userName,
+            })
+            .then(() => {
+              this.$router.push("/login");
+            });
         })
         .catch((error) => {
-          console.log(error);
+          alert(error.message);
         });
     },
   },

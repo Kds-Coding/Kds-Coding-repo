@@ -18,6 +18,7 @@ import AlgoCourse4 from '@/views/algorithm/AlgoCourse4.vue'
 import Web from '@/views/web_development/Web.vue'
 import WebCourse3 from '@/views/web_development/WebCourse3.vue'
 import Exercice1 from '@/views/web_development/exercices/Exercice1.vue'
+import Exercice2 from '@/views/web_development/exercices/Exercice2.vue'
 
 //Other pages
 
@@ -106,7 +107,7 @@ const routes = [
   },{
     path: '/web/exercice2',
     name: 'Exercice 2 ',
-    component: WorkInProgress,
+    component: Exercice2,
   },{
     path: '/obj',
     name: 'Développement objet ',
@@ -121,7 +122,7 @@ const routes = [
     component: WorkInProgress,
   },{
     path: '/obj/course3',
-    name: 'Exercice 2 ',
+    name: 'Exercice 3 ',
     component: WorkInProgress,
   },
 

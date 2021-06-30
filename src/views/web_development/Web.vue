@@ -99,10 +99,15 @@
           <GoldMedal width="125.232143" height="125.232143"></GoldMedal>
         </div>
         <div class="content">
-          Niveau : Facile
-          <h1>Exercice 2 :Lorem ipsum dolor sit amet</h1>
+          Niveau : Moyen
+          <h1>Exercice 2 :Remplis les textes à trous</h1>
         </div>
-        <div class="play"><Play circleColor="#4691BD"></Play></div>
+        <div class="play">
+          <Play
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/exercice2')"
+          ></Play>
+        </div>
       </article>
     </div>
     <div class="container-fluid text-center" style="margin: 20px">

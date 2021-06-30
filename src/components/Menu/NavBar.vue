@@ -86,20 +86,27 @@
           </ul>
         </li>
 
-        <li class="nav-item" id="Connect">
-          <a
-            href="#ConnectSubMenu"
-            data-toggle="collapse"
-            aria-expanded="false"
-            class=""
-            >Connecte toi !</a
-          >
+        <li
+          class="nav-item"
+          id="Connect"
+          href="#ConnectSubMenu"
+          data-toggle="collapse"
+          aria-expanded="false"
+        >
+          <a class="" v-if="user == null">Connecte toi !</a>
+          <a class="" v-else>{{ user.displayName }}</a>
           <ul class="collapse list-unstyled subMenu" id="ConnectSubMenu">
             <li>
-              <router-link to="/Login">Connexion</router-link>
+              <router-link v-if="user == null" to="/Login"
+                >Connexion</router-link
+              >
+              <router-link v-else to="/profil">Profil</router-link>
             </li>
             <li>
-              <router-link class="" to="/Register">Inscription</router-link>
+              <router-link v-if="user == null" class="" to="/Register"
+                >Inscription</router-link
+              >
+              <a v-else type="submit" @click="logOut()"> Se déconnecter </a>
             </li>
           </ul>
         </li>
@@ -109,7 +116,36 @@
 </template>
 
 <script>
-export default {};
+import { auth } from "../../firebaseDb";
+export default {
+  data() {
+    return {
+      user: null,
+    };
+  },
+  created() {
+    /*
+    default login : lurius.tharn@gmail.com
+    fitzChi
+    */
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        this.user = user;
+      } else {
+        this.user = null;
+      }
+    });
+  },
+  methods: {
+    logOut() {
+      auth.signOut().then(() => {
+        auth.onAuthStateChanged(() => {
+          this.$router.push("/login");
+        });
+      });
+    },
+  },
+};
 </script>
 
 <style>
@@ -126,7 +162,7 @@ img {
 }
 
 ul li a {
-  text-align: start;
+  text-align: center;
   font-size: 1.5em;
   display: block;
   margin: 5px;
