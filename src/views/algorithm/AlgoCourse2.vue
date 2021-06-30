@@ -8,8 +8,6 @@
     </p>
   </AlgoHeader>
   
-  neofuzanifoag,ejng
-  
   <div class="MainContent">
     <h3>Qu'est-ce qu-une variable<h3>
     <p>
@@ -17,7 +15,7 @@
       sur lesquels agit l'algorithme et de les associer à un nom. Pour faire plus
       simple, on peut considérer une variable comme un conteneur dans lequel 
       serait stocké l'élément. <br></br>
-      Exemple :
+      Exemple : <br></br>
     </p>
   </div>
 </template>
@@ -38,5 +36,6 @@ export default {
   font-family : "Bree Serif", serif;
   font-weight : 300;
   color : var(--back);
+  display : flex;
   }
 </style>
