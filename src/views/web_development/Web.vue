@@ -16,11 +16,8 @@
         </div>
         <div class="content">
           Niveau : Facile
-          <h1>cours 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
-          </p>
+          <h1>CHAPITRE 1</h1>
+          <p>Découverte des fondements d'une page web</p>
         </div>
         <div class="play">
           <Play
@@ -35,16 +32,13 @@
         </div>
         <div class="content">
           Niveau : Facile
-          <h1>cours 2</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
-          </p>
+          <h1>CHAPITRE 2</h1>
+          <p>Comment personnaliser une page web</p>
         </div>
         <div class="play">
           <Play
             circleColor="#4691BD"
-            @click="() => $router.push('/web/course1')"
+            @click="() => $router.push('/web/course2')"
           ></Play>
         </div>
       </article>
@@ -99,13 +93,28 @@
           <GoldMedal width="125.232143" height="125.232143"></GoldMedal>
         </div>
         <div class="content">
-          Niveau : Moyen
-          <h1>Exercice 2 :Remplis les textes à trous</h1>
+          Niveau : Facile
+          <h1>Exercice 2 : Remplis les textes à trous</h1>
         </div>
         <div class="play">
           <Play
             circleColor="#4691BD"
             @click="() => $router.push('/web/exercice2')"
+          ></Play>
+        </div>
+      </article>
+      <article class="col-lg-10 excercise">
+        <div class="medal">
+          <SilverMedal width="125.232143" height="125.232143"></SilverMedal>
+        </div>
+        <div class="content">
+          Niveau : Moyen
+          <h1>Exercice 3 : Remplis les textes à trous</h1>
+        </div>
+        <div class="play">
+          <Play
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/exercice3')"
           ></Play>
         </div>
       </article>

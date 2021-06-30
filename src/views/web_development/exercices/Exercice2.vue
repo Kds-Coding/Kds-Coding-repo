@@ -1,47 +1,39 @@
 <template>
   <div class="container CoursePage">
-    <TextaTrous
-      :answers="items2"
-      :rightAnswers="goodItems2"
-      identifier="Question2"
-    >
+    <div id="consigne">
+      <span>Reproduisez le texte qui suit:</span>
+      <div id="box">
+        <div>Je suis une div :)</div>
+        <span>Je suis un span!</span>
+      </div>
+    </div>
+    <TextaTrous :answers="items" :rightAnswers="goodItems">
       <template v-slot:TextContainer>
-        <div class="CodeStructure container codeContainer" id="Question2">
-          <span>&#60;html &#62;</span>
-          <Board style="margin-left: 30px" id="board-2-1" class="answer">
-          </Board>
+        <div class="CodeStructure container codeContainer" id="textFill">
+          <span>div {</span>
           <div style="margin-left: 60px" class="lineStructure">
-            <Board id="board-2-2" class="answer"> </Board>
-            Mon site web
-            <Board id="board-2-3" class="answer"> </Board>
+            <span>padding-right:</span>
+            <Board id="board-1" class="answer"> </Board>
+            <span>px;</span>
           </div>
-          <Board style="margin-left: 30px" id="board-2-4" class="answer">
-          </Board>
-
-          <span style="margin-left: 30px"> &#60;body &#62;</span>
-          <Board id="board-2-5" class="answer" style="margin-left: 55px">
-          </Board>
-
           <div style="margin-left: 60px" class="lineStructure">
-            <Board id="board-2-6" class="answer"> </Board>
-            La page de mon super site
-            <Board id="board-2-7" class="answer"> </Board>
+            <span>background-color:</span>
+            <Board id="board-2" class="answer"> </Board>
+            <span>;</span>
           </div>
-          <Board style="margin-left: 55px" id="board-2-8" class="answer">
-          </Board>
-
-          <span style="margin-left: 55px"> &#60;footer &#62;</span>
-          <span style="margin-left: 60px" class="lineStructure">
-            <Board id="board-2-9" class="answer"> </Board>
-            Mon pied de page incroyable
-            <Board id="board-2-10" class="answer"> </Board>
-          </span>
-
-          <span style="margin-left: 60px"> &#60;/footer &#62;</span>
-
-          <span style="margin-left: 30px">&#60;/body &#62;</span>
-
-          <span> &#60;/html &#62;</span>
+          <span>}</span>
+          <span>span {</span>
+          <div style="margin-left: 60px" class="lineStructure">
+            <span>margin-left:</span>
+            <Board id="board-3" class="answer"> </Board>
+            <span>px;</span>
+          </div>
+          <div style="margin-left: 60px" class="lineStructure">
+            <span>background-color:</span>
+            <Board id="board-4" class="answer"> </Board>
+            <span>;</span>
+          </div>
+          <span>}</span>
         </div>
       </template>
     </TextaTrous>
@@ -59,87 +51,63 @@ export default {
   },
   data() {
     return {
-      items2: [
+      items: [
         {
           id: 0,
           title: "Item-0",
-          value: "<title>",
+          value: "20",
           list: 1,
         },
         {
           id: 1,
           title: "Item-1",
-          value: "</title>",
+          value: "green",
           list: 1,
         },
         {
           id: 2,
           title: "Item-2",
-          value: "<head>",
+          value: "10",
           list: 1,
         },
         {
           id: 3,
           title: "Item-3",
-          value: "</head>",
-          list: 1,
-        },
-        {
-          id: 4,
-          title: "Item-4",
-          value: "</h1>",
-          list: 1,
-        },
-
-        {
-          id: 6,
-          title: "Item-6",
-          value: "<h1>",
-          list: 1,
-        },
-
-        {
-          id: 8,
-          title: "Item-8",
-          value: "<p>",
-          list: 1,
-        },
-        {
-          id: 9,
-          title: "Item-9",
-          value: "</p>",
-          list: 1,
-        },
-
-        {
-          id: 10,
-          title: "Item-10",
-          value: "<main>",
-          list: 1,
-        },
-        {
-          id: 11,
-          title: "Item-11",
-          value: "</main>",
+          value: "red",
           list: 1,
         },
       ],
-      goodItems2: [
-        "<head>",
-        "<title>",
-        "</title>",
-        "</head>",
-        "<main>",
-        "<h1>",
-        "</h1>",
-        "</main>",
-        "<p>",
-        "</p>",
-      ],
+      goodItems: ["20", "red", "10", "green"],
     };
   },
 };
 </script>
 
 <style>
+#consigne {
+  margin-bottom: 10px;
+  font-family: Alatsi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3em;
+  line-height: 1.7em;
+}
+
+#box {
+  color: #f9f9f9;
+  padding: 10px;
+  border: 3px dashed #aaaaaa;
+  border-radius: 12px;
+}
+
+#box div {
+  width: max-content;
+  padding-right: 50px;
+  background-color: red;
+}
+
+#box span {
+  margin-left: 10px;
+  background-color: green;
+}
 </style>
