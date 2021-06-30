@@ -8,6 +8,8 @@
     </p>
   </AlgoHeader>
   
+  neofuzanifoag,ejng
+  
   <div class="MainContent">
     <h3>Qu'est-ce qu-une variable<h3>
     <p>
