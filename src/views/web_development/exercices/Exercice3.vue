@@ -1,8 +1,12 @@
 <template>
   <div class="container CoursePage">
-    <TextaTrous :answers="items" :rightAnswers="goodItems">
+    <TextaTrous
+      :answers="items"
+      :rightAnswers="goodItems"
+      identifier="Question3"
+    >
       <template v-slot:TextContainer>
-        <div class="CodeStructure container codeContainer" id="textFill">
+        <div class="CodeStructure container codeContainer" id="Question3">
           <span>&#60;html &#62;</span>
           <Board style="margin-left: 30px" id="board-1" class="answer"> </Board>
           <div style="margin-left: 60px" class="lineStructure">
