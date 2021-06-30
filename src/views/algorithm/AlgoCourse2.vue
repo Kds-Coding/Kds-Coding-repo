@@ -7,6 +7,17 @@
       ce nom.
     </p>
   </AlgoHeader>
+  
+  <div class="MainContent">
+    <h3>Qu'est-ce qu-une variable<h3>
+    <p>
+      Une variable est un symbole dont le rôle est de stocker les divers éléments
+      sur lesquels agit l'algorithme et de les associer à un nom. Pour faire plus
+      simple, on peut considérer une variable comme un conteneur dans lequel 
+      serait stocké l'élément. <br></br>
+      Exemple :
+    </p>
+  </div>
 </template>
  
 <script>
@@ -18,3 +29,12 @@ export default {
   },
 };
 </script>
+
+<style>
+.MainContent p {
+  font-size : 1.5rem;
+  font-family : "Bree Serif", serif;
+  font-weight : 300;
+  color : var(--back);
+  }
+</style>
