@@ -16,10 +16,9 @@
         </div>
         <div class="content">
           Niveau : Facile
-          <h1>cours 1</h1>
+          <h1>CHAPITRE 1</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
+            Découverte des fondements d'une page web
           </p>
         </div>
         <div class="play">
@@ -35,16 +34,15 @@
         </div>
         <div class="content">
           Niveau : Facile
-          <h1>cours 2</h1>
+          <h1>CHAPITRE 2</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
+            Comment personnaliser une page web
           </p>
         </div>
         <div class="play">
           <Play
             circleColor="#4691BD"
-            @click="() => $router.push('/web/course1')"
+            @click="() => $router.push('/web/course2')"
           ></Play>
         </div>
       </article>
@@ -100,9 +98,29 @@
         </div>
         <div class="content">
           Niveau : Facile
-          <h1>Exercice 2 :Lorem ipsum dolor sit amet</h1>
+          <h1>Exercice 2 : Remplis les textes à trous</h1>
         </div>
-        <div class="play"><Play circleColor="#4691BD"></Play></div>
+        <div class="play">
+          <Play
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/exercice2')"
+          ></Play>
+        </div>
+      </article>
+      <article class="col-lg-10 excercise">
+        <div class="medal">
+          <SilverMedal width="125.232143" height="125.232143"></SilverMedal>
+        </div>
+        <div class="content">
+          Niveau : Moyen
+          <h1>Exercice 3 : Remplis les textes à trous</h1>
+        </div>
+        <div class="play">
+          <Play
+            circleColor="#4691BD"
+            @click="() => $router.push('/web/exercice3')"
+          ></Play>
+        </div>
       </article>
     </div>
     <div class="container-fluid text-center" style="margin: 20px">

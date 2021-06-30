@@ -180,10 +180,10 @@
       viewBox="0 0 1900 250"
     >
       <div class="centerLink">
-        <h1 class="footerLink">EXERCICE 1</h1>
+        <h1 class="footerLink">EXERCICE</h1>
         <Arrow
           arrowTransform="rotate(90)"
-          @click="() => $router.push('/web/exercice1')"
+          @click="() => $router.push('/web/exercice3')"
         ></Arrow>
       </div>
     </Banner>

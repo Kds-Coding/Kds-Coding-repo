@@ -16,8 +16,12 @@ import AlgoCourse4 from '@/views/algorithm/AlgoCourse4.vue'
 
 //Web pages
 import Web from '@/views/web_development/Web.vue'
+import WebCourse1 from '@/views/web_development/WebCourse1.vue'
+import WebCourse2 from '@/views/web_development/WebCourse2.vue'
 import WebCourse3 from '@/views/web_development/WebCourse3.vue'
 import Exercice1 from '@/views/web_development/exercices/Exercice1.vue'
+import Exercice2 from '@/views/web_development/exercices/Exercice2.vue'
+import Exercice3 from '@/views/web_development/exercices/Exercice3.vue'
 
 //Other pages
 
@@ -92,39 +96,54 @@ const routes = [
   },
   {
     path: '/web/course1',
-    name: 'Course1',
-    component: WorkInProgress,
+    name: 'Chapitre 1',
+    component: WebCourse1,
+  },
+  {
+    path: '/web/course2',
+    name: 'Chapitre 2',
+    component: WebCourse2,
   },
   {
     path: '/web/course3',
     name: 'Chapitre 3',
     component: WebCourse3,
-  }, {
+  },
+  {
     path: '/web/exercice1',
-    name: 'Exercice 1 - texte à trou',
+    name: 'chapitre 1 : texte à trou',
     component: Exercice1,
-  },{
+  },
+  {
     path: '/web/exercice2',
-    name: 'Exercice 2 ',
-    component: WorkInProgress,
-  },{
+    name: 'chapitre 2 : texte à trou',
+    component: Exercice2,
+  },
+  {
+    path: '/web/exercice3',
+    name: 'chapitre 3 : texte à trou',
+    component: Exercice3,
+  },
+  {
     path: '/obj',
     name: 'Développement objet ',
     component: WorkInProgress,
-  },{
+  },
+  {
     path: '/obj/course1',
     name: 'Exercice 2 ',
     component: WorkInProgress,
-  },{
+  },
+  {
     path: '/obj/course2',
     name: 'Exercice 2 ',
     component: WorkInProgress,
-  },{
+  },
+  {
     path: '/obj/course3',
     name: 'Exercice 2 ',
     component: WorkInProgress,
-  },
-
+  }
 ]
 
 const router = createRouter({
